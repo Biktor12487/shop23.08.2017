@@ -8,3 +8,12 @@ $(document).ready(function(){
   	autoWidth: true,
   });
 });
+$(document).ready(function(){
+  $("#popularProducts-slider").owlCarousel({
+  	items: 4,
+  	dots: false,
+  	nav: true,
+  	navText: false,
+  	margin: 0,
+  });
+});
