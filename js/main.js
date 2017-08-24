@@ -37,3 +37,18 @@ var navCategory = function(){
 		}
 	}
 }();
+var chekbox = function(){
+	var el = document.querySelectorAll('.psevodCheckBox');
+	for (var i = el.length - 1; i >= 0; i--) {
+		el[i].onclick = function(){
+			if (this.getAttribute('data-status') == 'off' || !this.getAttribute('data-status')) {
+				this.setAttribute('data-status','on')
+				this.querySelector('input').setAttribute('checked','checked')
+			}
+			else{
+				this.setAttribute('data-status','off')
+				this.querySelector('input').removeAttribute('checked')
+			}
+		}
+	}
+}();
