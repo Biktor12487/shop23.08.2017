@@ -26,6 +26,15 @@ $(document).ready(function(){
   	margin: 0,
   });
 });
+$(document).ready(function(){
+  $("#youWasSee-slider").owlCarousel({
+  	items: 10,
+  	dots: false,
+  	nav: true,
+  	navText: false,
+  	margin: 10,
+  });
+});
 var navCategory = function(){
 	var el = document.querySelectorAll('.navbar > ul > li');
 	for (var i = el.length - 1; i >= 0; i--) {
