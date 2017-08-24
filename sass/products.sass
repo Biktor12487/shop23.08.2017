@@ -169,18 +169,73 @@
 	padding: 30px 0
 	.leftSector
 		width: 285px
-		min-height: 1px
 		float: left
+		box-sizing: border-box
+		padding-right: 30px
+		.banner
+			width: 100%
+			img
+				width: 100%
+		.emailShare
+			margin: 20px 0
+			box-sizing: border-box
+			padding: 20px
+			background-color: #eeeeee
+			position: relative
+			z-index: 1
+			.percentIcon
+				width: 24px
+				position: absolute
+				right: 10px
+				top: -12px
+				img
+					width: 100%
+			.title
+				font-family: 'Roboto' , sans-serif
+				font-size: 16px
+				color: #000
+				margin-bottom: 10px
+				font-weight: 700
+			.beforeTitle
+				font-family: 'Roboto' ,sans-serif
+				font-size: 14px
+				font-weight: 400
+				color: #666666
+				margin-bottom: 15px
+			.fieldGroup
+				.textField
+					width: 180px
+					height: 30px
+					box-sizing: border-box
+					padding: 5px
+					font-family: 'Roboto', sans-serif
+					font-weight: 300
+					color: #333
+					border: 0
+					display: block
+					float: left
+				.sendField
+					width: 30px
+					height: 30px
+					box-sizing: border-box
+					border: 1px solid #ae1c51
+					background-color: #fff
+					background-image: url('../images/icons/arrowPodpiska.png')
+					background-repeat: no-repeat
+					background-position: center
+					cursor: pointer
 	.rightSector
 		float: right
-		width: 885px
+		width: 850px
 	.card	
 		width: 255px
 		float: left
-		margin: 0 20px	
+		margin: 0 15px	
 		position: relative
 		margin-bottom: 30px
 		min-height: 425px
+		&:nth-child(3n)
+			margin-right: 0
 		&:hover
 			.psevdoCard
 				transition-duration: .5s
@@ -253,6 +308,7 @@
 				font-weight: 300
 		img
 			margin-bottom: 20px
+			max-width: 100%
 		.addToCart
 			color: #c3567e
 			font-size: 14px
