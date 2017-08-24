@@ -17,3 +17,12 @@ $(document).ready(function(){
   	margin: 0,
   });
 });
+$(document).ready(function(){
+  $("#long-slider").owlCarousel({
+  	items: 1,
+  	dots: false,
+  	nav: true,
+  	navText: false,
+  	margin: 0,
+  });
+});

@@ -302,6 +302,10 @@
   margin-top: 20px;
 }
 
+.popularProducts {
+  padding: 15px 0 45px;
+}
+
 .popularProducts .title {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
@@ -438,6 +442,208 @@
 .popularProducts .owl-next {
   right: -20px;
   background-image: url("../images/icons/popularRight.png");
+}
+
+.longSlider {
+  height: 300px;
+  overflow: hidden;
+}
+
+.longSlider .owl-item {
+  min-height: 300px !important;
+}
+
+.longSlider .owl-item img {
+  height: 300px;
+}
+
+.longSlider .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 1140px;
+  left: 50%;
+  margin-left: -570px;
+}
+
+.longSlider .owl-nav .owl-prev, .longSlider .owl-nav .owl-next {
+  position: absolute;
+  height: 35px;
+  width: 20px;
+  background-repeat: no-repeat;
+  -webkit-background-size: container container;
+  background-size: container;
+}
+
+.longSlider .owl-nav .owl-prev {
+  left: 0;
+  background-image: url("../images/icons/arrowLeftSlider.png");
+}
+
+.longSlider .owl-nav .owl-next {
+  right: 0;
+  background-image: url("../images/icons/arrowRightSlider.png");
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #eeeeee;
+}
+
+.footer .container > div {
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.footer .container > div .title {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.footer .container > div a {
+  text-decoration: none;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #37466f;
+}
+
+.footer .container > div a:hover {
+  text-decoration: underline;
+}
+
+.footer .container > div li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.footer .container > div span {
+  font-family: 'Roboto' , sans-serif;
+  color: #525252;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer .container > div span a {
+  color: #525252;
+}
+
+.footer .sector1 {
+  width: 26%;
+  padding: 0 25px;
+}
+
+.footer .sector1 .about {
+  padding: 20px 0 15px;
+}
+
+.footer .sector1 .fieldGroup .textField {
+  width: 160px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #333;
+  border: 0;
+  display: block;
+  float: left;
+}
+
+.footer .sector1 .fieldGroup .sendField {
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ae1c51;
+  background-color: #fff;
+  background-image: url("../images/icons/arrowPodpiska.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.footer .sector2 {
+  width: 20.6%;
+  padding: 0 50px 0 25px;
+}
+
+.footer .sector3 {
+  width: 33.3%;
+  padding: 0 25px;
+}
+
+.footer .sector3 li {
+  padding-left: 25px !important;
+}
+
+.footer .sector3 .address {
+  background-image: url("../images/icons/footerAddress.png");
+  background-repeat: no-repeat;
+  background-position: left 8px;
+}
+
+.footer .sector3 .email {
+  background-image: url("../images/icons/footerEmail.png");
+  background-repeat: no-repeat;
+  background-position: left 8px;
+}
+
+.footer .sector3 .skype {
+  background-image: url("../images/icons/footerSkype.png");
+  background-repeat: no-repeat;
+  background-position: 10px 0;
+  padding-left: 35px;
+}
+
+.footer .sector3 .call {
+  background-image: url("../images/icons/call.png");
+  background-repeat: no-repeat;
+  background-position: left 8px;
+}
+
+.footer .sector3 .time {
+  background-image: url("../images/icons/footerTimeWork.png");
+  background-repeat: no-repeat;
+  background-position: left 8px;
+}
+
+.footer .sector4 {
+  width: 20.1%;
+  padding: 0 25px;
+}
+
+.footer .sector4 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer .sector4 a img {
+  margin-left: 8px;
+}
+
+.copyright {
+  background-color: #eeeeee;
+  padding: 20px 0 15px;
+  text-align: center;
+  border-top: 1px solid #dedede;
+}
+
+.copyright span {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #999898;
 }
 
 /*# sourceMappingURL=style.css.map */
