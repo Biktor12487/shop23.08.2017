@@ -8,6 +8,8 @@
 	width: 100%
 	float: left
 	clear: both	
+body
+	overflow-x: hidden
 .topPanel
 	border-color: #fff
 	padding: 10px 0 5px
@@ -24,6 +26,8 @@
 				color: #374470
 				text-decoration: none
 				padding-right: 20px
+				&:hover
+					text-decoration: underline
 	.social
 		float: left
 		a
@@ -67,9 +71,16 @@
 	.owl-carousel
 		position: relative
 		z-index: 1
+		height: 400px
+		width: 100vw
 		.owl-item
+			height: 400px
+			width: 100vw
 			*
-				width: 100%
+				background-size: cover
+				height: 400px
+				width: 100vw
+				background-position: center
 		.owl-dots
 			width: 100%
 			bottom: 30px
@@ -146,13 +157,21 @@
 .categoryNav
 	width: 100%
 	.navbar
-		padding: 25px
-	ul
-		display: flex
-		justify-content: space-around
-	li
-		float: left
-		list-style: none
+		position: relative
+		z-index: 10
+		&>ul
+			display: flex
+			justify-content: space-around
+			&>li
+				float: left
+				list-style: none
+				padding: 25px 0
+				&[data-status="hidden"]
+					.navContent
+						display: none
+				&[data-status="visible"]
+					.navContent
+						display: block
 		span
 			text-decoration: none
 			font-family: 'Roboto' , sans-serif
@@ -164,6 +183,62 @@
 			background-position: right center
 			padding-right: 35px
 			cursor: pointer
+	.navContent
+		position: absolute
+		top: 69px
+		width: 1140px
+		background-color: #fff
+		z-index: 999
+		left: 0
+		padding: 15px 20px 55px
+		height: 175px
+		box-sizing: border-box
+		float: left
+		overflow: hidden
+		&>ul
+			&>li
+				&>a
+					text-transform: uppercase
+					display: block
+					margin-bottom: 13px
+		li
+			list-style: none
+			margin: 7px 0
+			display: block
+			&[data-more="true"]
+				float: left
+			&[data-more="false"]
+				padding-top: 5px
+			&>ul
+				&.col-2
+					width: 350px
+					display: flex
+					flex-wrap: wrap
+					&>li
+						float: left
+						margin-right: 90px
+						width: 80px
+				&.col-1
+					column-count: 1
+					&>li
+						float: none
+						margin-right: 90px
+						width: 80px
+				// &.col-3
+				// 	column-count: 3
+				// list-style-type: decimal;
+			a
+				list-style: none
+				font-family: 'Roboto' , sans-serif
+				font-size: 14px
+				color: #000
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+		.actionBanner
+			position: absolute
+			top: 0 
+			right: 0
 .categoryCards
 	padding: 30px 0
 	.card
