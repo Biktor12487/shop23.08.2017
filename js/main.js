@@ -35,6 +35,15 @@ $(document).ready(function(){
   	margin: 10,
   });
 });
+$(document).ready(function(){
+  $(".recomendation-slider").owlCarousel({
+    items: 4,
+    dots: false,
+    nav: true,
+    navText: false,
+    margin: 10,
+  });
+});
 var navCategory = function(){
 	var el = document.querySelectorAll('.navbar > ul > li');
 	for (var i = el.length - 1; i >= 0; i--) {
@@ -63,4 +72,37 @@ var chekbox = function(){
 }();
 $(document).ready(function(){
   $('.sizeSelect').customSelect();
+  $('.orderSelect').customSelect();
 });
+var countField = function(){
+  var el = document.querySelectorAll('.countField');
+  for (var i = el.length - 1; i >= 0; i--) {
+     el[i].querySelector('.minus').onclick = function() {
+        if ( Number( this.parentNode.querySelector('input').value) > 0) {
+          this.parentNode.querySelector('input').value = Number( this.parentNode.querySelector('input').value) -1;
+        }
+        else{
+          this.parentNode.querySelector('input').value = 0;
+        }
+      }
+     el[i].querySelector('.plus').onclick = function() {
+        if ( Number( this.parentNode.querySelector('input').value) < 999) {
+          this.parentNode.querySelector('input').value = Number( this.parentNode.querySelector('input').value) +1;
+        }
+        else{
+          this.parentNode.querySelector('input').value = 999;
+        }
+      }
+     el[i].querySelector('input').onchange = function(){
+        if (Number(this.value) < 0) {
+          this.value = 0;
+        }
+        else if (Number(this.value) > 999) {
+          this.value = 999;
+        }
+        else if (this.value % 1 != 0) {
+          this.value = 1;
+        }
+      }
+  }
+}();

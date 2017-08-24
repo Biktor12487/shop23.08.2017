@@ -222,6 +222,10 @@
   padding-top: 25px;
 }
 
+.cart .row.just .col.close * {
+  cursor: pointer;
+}
+
 .cart .row.just .col .prcieNum {
   font-family: 'Roboto' , sans-serif;
   font-size: 18px;
@@ -270,6 +274,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 15px 25px 20px 10px;
+  margin-top: 20px;
 }
 
 .cart .result .promocode {
@@ -294,6 +299,7 @@
   font-family: 'Roboto' , sans-serif;
   font-size: 14px;
   color: #ae1b4f;
+  cursor: pointer;
   font-weight: 300;
 }
 
@@ -330,6 +336,371 @@
   height: 1px;
   background-color: #b01b52;
   top: 50%;
+}
+
+.orderShower {
+  padding: 35px 0 20px;
+}
+
+.orderShower .orderShowerKey {
+  float: right;
+  color: #b01b52;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #f8f8f8;
+  width: 245px;
+  height: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-image: url("../images/icons/arrowBottomRed.png");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.orderSector .form {
+  width: 100%;
+  background-color: #f8f8f8;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 25px 30px 35px 25px;
+}
+
+.orderSector .form .title {
+  font-family: 'Source Sans Pro' , sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.orderSector .form .longField {
+  width: 340px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.orderSector .form .longField label {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  float: left;
+  clear: both;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.orderSector .form .longField input {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid #e9e9e9;
+  display: block;
+  box-sizing: border-box;
+  padding: 4px 5px;
+}
+
+.orderSector .form .smallField {
+  width: 110px;
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 20px;
+}
+
+.orderSector .form .smallField:last-child {
+  margin-right: 0;
+}
+
+.orderSector .form .smallField label {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  float: left;
+  clear: both;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.orderSector .form .smallField input {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid #e9e9e9;
+  display: block;
+  box-sizing: border-box;
+  padding: 4px 5px;
+}
+
+.orderSector .form .veryLongField {
+  width: 100%;
+  display: block;
+  float: left;
+  clear: both;
+}
+
+.orderSector .form .veryLongField label {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  float: left;
+  clear: both;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.orderSector .form .veryLongField textarea {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid #e9e9e9;
+  display: block;
+  box-sizing: border-box;
+  padding: 4px 5px;
+}
+
+.orderSector .form .row {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.orderSector .form .sendKey {
+  float: right;
+  display: block;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #b01b52;
+  border: 0;
+  text-transform: uppercase;
+  width: 185px;
+  height: 50px;
+  background-image: url("../images/icons/orderKeyIcon.png");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 25px;
+  cursor: pointer;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+  margin-top: 30px;
+}
+
+.orderSector .form .sendKey:hover {
+  opacity: .9;
+}
+
+.orderSector .form .longField:nth-child(4), .orderSector .form .longField:nth-child(7) {
+  margin-right: 0;
+}
+
+.orderSector .selectField span {
+  width: 100% !important;
+}
+
+.orderSector .customSelect {
+  font: 14px;
+  background: #fff url("../images/icons/arrowBottom.png") right 10px center no-repeat;
+  border: 1px solid #ddd;
+  color: #555;
+  -webkit-border-radius: 2px;
+  border-radius: 2px 2px;
+  width: 340px;
+  height: 40px;
+  padding: 10px 10px 15px 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+  font-family: 'Roboto' , sans-serif;
+  color: #999;
+  cursor: pointer;
+  border: 1px solid #e9e9e9;
+  background-color: #fff;
+  text-align: left;
+}
+
+.recomendation {
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.recomendation .container {
+  padding-top: 30px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.recomendation .title {
+  font-family: 'Source Sans Pro' , sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.recomendation .owl-carousel {
+  position: relative;
+}
+
+.recomendation .card {
+  margin: 0 20px;
+  position: relative;
+}
+
+.recomendation .card.new:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "NEW";
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #00838f;
+  width: 40px;
+  padding: 4px 0;
+  text-align: center;
+  top: 10px;
+}
+
+.recomendation .card .dropPrice {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "NEW";
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #b01b52;
+  width: 40px;
+  padding: 4px 0;
+  text-align: center;
+  top: 120pxx;
+}
+
+.recomendation .card .infoProduct {
+  float: left;
+  width: 120px;
+}
+
+.recomendation .card .infoProduct .nameProduct {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+.recomendation .card .infoProduct .price {
+  font-family: 'Roboto' , sans-serif;
+  color: #000;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.recomendation .card img {
+  margin-bottom: 20px;
+}
+
+.recomendation .card .addToCart {
+  color: #c3567e;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  width: 110px;
+  height: 30px;
+  float: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Roboto' , sans-serif;
+  cursor: pointer;
+}
+
+.recomendation .card .breakPrice {
+  color: #000;
+  font-size: 14px;
+  font-family: 'Roboto' , sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+  margin-top: 10px;
+}
+
+.recomendation .card .breakPrice:before {
+  background-color: #b01b52;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+}
+
+.recomendation .owl-nav {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+}
+
+.recomendation .owl-prev, .recomendation .owl-next {
+  position: absolute;
+  height: 35px;
+  width: 20px;
+  background-repeat: no-repeat;
+  -webkit-background-size: container container;
+  background-size: container;
+}
+
+.recomendation .owl-prev {
+  left: -20px;
+  background-image: url("../images/icons/popularLeft.png");
+}
+
+.recomendation .owl-next {
+  right: -20px;
+  background-image: url("../images/icons/popularRight.png");
 }
 
 /*# sourceMappingURL=cart.css.map */
