@@ -1,0 +1,232 @@
+.topPanel
+	.logo
+		float: left
+		display: block
+		width: 125px
+		margin-right: 10px
+		img
+			max-width: 100%
+	.box
+		float: right
+		margin-left: 20px
+	.empty
+		width: 
+		border: 1px solid #ac1c57
+		color: #ac1c57
+		display: flex
+		align-items: center
+		justify-content: space-around
+		height: 50px
+		box-sizing: border-box
+		float: right
+		width: 190px
+		font-family: 'Roboto' , sans-serif
+		font-size: 14px
+		font-weight: 300
+.cart
+	padding-top: 30px
+	.title
+		font-family: 'Source Sans Pro' , sans-serif
+		font-size: 30px
+		font-weight: 400
+		color: #000
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 30px
+	.row.firstRow
+		background-color: #f8f8f8
+		width: 100%
+		float: left
+		clear: both
+		padding: 10px 0
+		.col
+			float: left
+			font-family: 'Roboto' , sans-serif
+			font-size: 14px
+			font-weight: 700
+			color: #000000
+			min-height: 1px
+			text-align: center
+			&.about
+				width: 285px
+			&.size
+				width: 190px
+			&.height
+				width: 190px
+			&.count
+				width: 190px
+			&.price
+				width: 190px
+			&.close
+				width: 95px
+	.row.just
+		width: 100%
+		float: left
+		clear: both
+		padding-top: 20px
+		margin-bottom: 20px
+		.col
+			float: left
+			&.about
+				width: 285px
+				.productImg
+					float: left
+				img
+					width: 50px
+					margin: 0px 30px 0 10px
+				.infoProduct
+					display: block
+					float: left
+					.nameProduct
+						font-family: 'Source Sans Pro' , sans-serif
+						font-size: 18px
+						color: #000
+						font-weight: 400
+						margin-bottom: 5px	
+					.color , .aticule
+						font-family: 'Roboto' , sans-serif
+						font-size: 14px
+						color: #000
+					.aticule
+			&.size
+				width: 190px
+				text-align: center
+				padding-top: 20px
+			&.height
+				width: 190px
+				text-align: center
+				padding-top: 20px
+				.customSelectInner
+					width: 100% !important
+					text-align: left
+			&.count
+				width: 190px
+				text-align: center
+				padding-top: 20px
+				.countField
+					display: inline-block
+					margin: 0 auto
+				input
+					width: 45px
+					background-color: #f8f8f8
+					border: 0
+					height: 35px
+					float: left
+					text-align: center
+					font-family: 'Roboto' , sans-serif
+					font-size: 14px
+					color: #666666
+				.minus
+					float: left
+					margin-right: 10px
+					margin-top: 5px
+					display: block
+					cursor: pointer
+				.plus
+					float: left
+					margin-left: 10px
+					margin-top: 8px
+					display: block
+					cursor: pointer
+			&.price
+				width: 190px
+				text-align: center
+				.breakPrice
+					font-family: 'Roboto' , sans-serif
+					font-size: 14px
+					color: #000
+					position: relative
+					display: inline-block
+					&:before
+						content: ""
+						position: absolute
+						width: 100%
+						height: 1px
+						background-color: #b01b52
+						top: 50%
+			&.close
+				width: 95px
+				text-align: center
+				padding-top: 25px 
+			.prcieNum
+				font-family: 'Roboto' , sans-serif
+				font-size: 18px
+				color: #000
+				margin: 5px 0 10px
+			.dropPrice
+				font-family: 'Roboto' , sans-serif
+				font-size: 12px
+				color: #ae1b4f
+				font-weight: 300
+	.customSelect 
+	    font: 14px sans-serif
+	    background: #fff url('../images/icons/arrowBottom.png') right 10px center no-repeat
+	    border: 1px solid #ddd
+	    color: #555
+	    -moz-border-radius: 2px
+	    -webkit-border-radius: 2px
+	    border-radius: 2px 2px
+	    width: 155px
+	    height: 35px
+	    padding: 10px 10px 15px 10px
+	    box-sizing: border-box
+	    display: none
+	    font-family: 'Roboto' , sans-serif
+	    color: #b01b52
+	    text-transform: uppercase
+	    cursor: pointer
+	    border: 0
+	    background-color: #f8f8f8
+	    text-align: left
+	.height
+		.customSelect
+			text-transform: lowercase
+	.result
+		width: 100%
+		float: left
+		clear: both
+		border: 1px solid #e9e9e9
+		box-sizing: border-box
+		padding: 15px 25px 20px 10px
+		.promocode
+			float: left
+			.textField
+				width: 190px
+				height: 30px
+				border: 1px solid #e9e9e9
+				box-sizing: border-box
+			.sendField
+				width: 175px
+				height: 30px
+				box-sizing: border-box
+				border: 0
+				background-color: #f8f8f8
+				font-family: 'Roboto' , sans-serif
+				font-size: 14px
+				color: #ae1b4f
+				font-weight: 300
+		.infoOrder
+			float: right
+			font-family: 'Roboto' , sans-serif
+			font-size: 16px
+			color: #000
+			text-align: right
+			font-weight: 300
+			&>div
+				margin-bottom: 10px
+			b
+				font-weight: 700
+			.breakPrice
+				font-family: 'Roboto' , sans-serif
+				font-size: 16px
+				color: #000
+				position: relative
+				display: inline-block
+				margin: 0 10px
+				&:before
+					content: ""
+					position: absolute
+					width: 100%
+					height: 1px
+					background-color: #b01b52
+					top: 50%

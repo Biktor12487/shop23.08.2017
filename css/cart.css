@@ -1,0 +1,335 @@
+.topPanel .logo {
+  float: left;
+  display: block;
+  width: 125px;
+  margin-right: 10px;
+}
+
+.topPanel .logo img {
+  max-width: 100%;
+}
+
+.topPanel .box {
+  float: right;
+  margin-left: 20px;
+}
+
+.topPanel .empty {
+  border: 1px solid #ac1c57;
+  color: #ac1c57;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  width: 190px;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.cart {
+  padding-top: 30px;
+}
+
+.cart .title {
+  font-family: 'Source Sans Pro' , sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.cart .row.firstRow {
+  background-color: #f8f8f8;
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 10px 0;
+}
+
+.cart .row.firstRow .col {
+  float: left;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  min-height: 1px;
+  text-align: center;
+}
+
+.cart .row.firstRow .col.about {
+  width: 285px;
+}
+
+.cart .row.firstRow .col.size {
+  width: 190px;
+}
+
+.cart .row.firstRow .col.height {
+  width: 190px;
+}
+
+.cart .row.firstRow .col.count {
+  width: 190px;
+}
+
+.cart .row.firstRow .col.price {
+  width: 190px;
+}
+
+.cart .row.firstRow .col.close {
+  width: 95px;
+}
+
+.cart .row.just {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cart .row.just .col {
+  float: left;
+}
+
+.cart .row.just .col.about {
+  width: 285px;
+}
+
+.cart .row.just .col.about .productImg {
+  float: left;
+}
+
+.cart .row.just .col.about img {
+  width: 50px;
+  margin: 0px 30px 0 10px;
+}
+
+.cart .row.just .col.about .infoProduct {
+  display: block;
+  float: left;
+}
+
+.cart .row.just .col.about .infoProduct .nameProduct {
+  font-family: 'Source Sans Pro' , sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.cart .row.just .col.about .infoProduct .color, .cart .row.just .col.about .infoProduct .aticule {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.cart .row.just .col.size {
+  width: 190px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cart .row.just .col.height {
+  width: 190px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cart .row.just .col.height .customSelectInner {
+  width: 100% !important;
+  text-align: left;
+}
+
+.cart .row.just .col.count {
+  width: 190px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cart .row.just .col.count .countField {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.cart .row.just .col.count input {
+  width: 45px;
+  background-color: #f8f8f8;
+  border: 0;
+  height: 35px;
+  float: left;
+  text-align: center;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #666666;
+}
+
+.cart .row.just .col.count .minus {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+.cart .row.just .col.count .plus {
+  float: left;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: block;
+  cursor: pointer;
+}
+
+.cart .row.just .col.price {
+  width: 190px;
+  text-align: center;
+}
+
+.cart .row.just .col.price .breakPrice {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  position: relative;
+  display: inline-block;
+}
+
+.cart .row.just .col.price .breakPrice:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #b01b52;
+  top: 50%;
+}
+
+.cart .row.just .col.close {
+  width: 95px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.cart .row.just .col .prcieNum {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  color: #000;
+  margin: 5px 0 10px;
+}
+
+.cart .row.just .col .dropPrice {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 12px;
+  color: #ae1b4f;
+  font-weight: 300;
+}
+
+.cart .customSelect {
+  font: 14px sans-serif;
+  background: #fff url("../images/icons/arrowBottom.png") right 10px center no-repeat;
+  border: 1px solid #ddd;
+  color: #555;
+  -webkit-border-radius: 2px;
+  border-radius: 2px 2px;
+  width: 155px;
+  height: 35px;
+  padding: 10px 10px 15px 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+  font-family: 'Roboto' , sans-serif;
+  color: #b01b52;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 0;
+  background-color: #f8f8f8;
+  text-align: left;
+}
+
+.cart .height .customSelect {
+  text-transform: lowercase;
+}
+
+.cart .result {
+  width: 100%;
+  float: left;
+  clear: both;
+  border: 1px solid #e9e9e9;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 25px 20px 10px;
+}
+
+.cart .result .promocode {
+  float: left;
+}
+
+.cart .result .promocode .textField {
+  width: 190px;
+  height: 30px;
+  border: 1px solid #e9e9e9;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cart .result .promocode .sendField {
+  width: 175px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #f8f8f8;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #ae1b4f;
+  font-weight: 300;
+}
+
+.cart .result .infoOrder {
+  float: right;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-align: right;
+  font-weight: 300;
+}
+
+.cart .result .infoOrder > div {
+  margin-bottom: 10px;
+}
+
+.cart .result .infoOrder b {
+  font-weight: 700;
+}
+
+.cart .result .infoOrder .breakPrice {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.cart .result .infoOrder .breakPrice:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #b01b52;
+  top: 50%;
+}
+
+/*# sourceMappingURL=cart.css.map */

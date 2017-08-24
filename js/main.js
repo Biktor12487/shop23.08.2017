@@ -61,3 +61,6 @@ var chekbox = function(){
 		}
 	}
 }();
+$(document).ready(function(){
+  $('.sizeSelect').customSelect();
+});
