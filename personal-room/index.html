@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="../css/owl.carousel.min.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/personal-room.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 	<!-- font-family: 'Roboto', sans-serif; -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<!-- 'Source Sans Pro', sans-serif; -->
@@ -266,7 +266,15 @@
 				</div>
 				<!--  -->
 				<div class="sector2 sectors" id="fragment-2">
-					<div class="title">Адрес доставки</div>
+					<div class="row">
+						<div class="title">Адрес доставки</div>
+						<div class="cehcPoint">
+								<div class="psevodCheckBox" data-status="on">
+										<input type="checkbox">
+								</div>
+								<span>Получать рекламные письма</span>
+						</div>
+					</div>
 					<div class="longField"><label for="">Страна </label><input type="text" class="textField"></div>
 						<div class="longField"><label for="">Регион </label><input type="text" class="textField"></div>
 						<div class="longField"><label for="">Населенный пункт</label><input type="text"></div>
@@ -308,7 +316,28 @@
 							</label>
 							<input type="text" class="textField">
 						</div>
+						<div class="fieldGroup longField">
+							<label for="">
+								Способ доставки по умолчанию
+							</label>
+							<select name="" id="" class="selectField orderSelect">
+								<option value="">Курьером</option>
+								<option value="">Самовывоз</option>
+								<option value="">Почтой</option>
+							</select>
+						</div>	
+						<div class="fieldGroup longField">
+							<label for="">
+								Способ оплаты по умолчанию
+							</label>
+							<select name="" id="" class="selectField orderSelect">
+								<option value="">Наличными курьеру</option>
+								<option value="">Наличными курьеру</option>
+								<option value="">Наличными курьеру</option>
+							</select>
+						</div>
 						<div class="row">
+							<div class="moreAddress">Еще один адрес</div>
 							<input type="submit" class="keyRefresh" value="Обновить">
 						</div>
 				</div>
@@ -323,6 +352,235 @@
 						<div class="longField"><label for="">Повторить ввод нового пароля</label><input type="text textField"></div>	
 						<div class="row">
 							<input type="submit" class="keyRefresh" value="Обновить">
+						</div>
+				</div>
+				<!--  -->
+				<div class="sector4 sectors" id="fragment-4">
+					<div class="table">
+						<div class="firstRow">
+							<div class="id"> <span>#</span> </div>
+							<div class="date"><span>Дата заказа</span></div>
+							<div class="sumare"><span>Сумма</span></div>
+							<div class="status"><span>Статус</span></div>
+							<div class="variantePay"><span>Способ оплаты</span></div>
+						</div>
+						<div class="justTr firstLn">
+							<div class="id"><span>1</span></div>
+							<div class="date"><span>20.09.2017</span></div>
+							<div class="sumare"><span>2700 руб</span></div>
+							<div class="status"><span>Доставлено</span></div>
+							<div class="variantePay"><span>Наличные</span></div>
+						</div>
+						<div class="justTr">
+							<div class="id"><span>2</span></div>
+							<div class="date"><span>20.09.2017</span></div>
+							<div class="sumare"><span>2700 руб</span></div>
+							<div class="status"><span>Комплектутся</span></div>
+							<div class="variantePay"><span>Наличные</span></div>
+						</div>
+
+						<div class="productHistory">
+							<div class="row">
+									<div class="col about">
+										<div class="productImg">
+												<img src="../images/content/product1.jpg" alt="">
+											</div>
+											<div class="infoProduct">
+												<div class="nameProduct">
+													Блузка женская
+												</div>
+												<div class="color">
+													Цвет: белый
+												</div>
+												<div class="aticule">
+													Артикул: 545451
+												</div>
+											</div>
+									</div>
+									<div class="col size">
+										<div>
+											<span>Размер: XS</span>
+											<span>Рост: 168 см</span>
+										</div>
+									</div>
+									<div class="priceCount">
+										<div>
+											<span>Цена: 3000 р.</span>
+											<span>Количество: 1</span>
+										</div>
+									</div>
+									<div class="dropPrice">
+										<div>
+											<span>Скидка: 15% </span>
+											<span>Сумма скидки: 330 р.</span>
+										</div>
+									</div>
+							</div>
+							<div class="row">
+									<div class="col about">
+										<div class="productImg">
+												<img src="../images/content/product1.jpg" alt="">
+											</div>
+											<div class="infoProduct">
+												<div class="nameProduct">
+													Блузка женская
+												</div>
+												<div class="color">
+													Цвет: белый
+												</div>
+												<div class="aticule">
+													Артикул: 545451
+												</div>
+											</div>
+									</div>
+									<div class="col size">
+										<div>
+											<span>Размер: XS</span>
+											<span>Рост: 168 см</span>
+										</div>
+									</div>
+									<div class="priceCount">
+										<div>
+											<span>Цена: 3000 р.</span>
+											<span>Количество: 1</span>
+										</div>
+									</div>
+									<div class="dropPrice">
+										<div>
+											<span>Скидка: 15% </span>
+											<span>Сумма скидки: 330 р.</span>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="sector5 sectors" id="fragment-5">
+					<div class="table">
+						<div class="row firstRow">
+							<div class="col about">
+								<!-- photo and about -->
+							</div>
+							<div class="col size">Размер</div>
+							<div class="col height">Рост</div>
+							<div class="col price">Цена</div>
+							<div class="col close">
+								<!-- close -->
+							</div>
+						</div>
+						<div class="row just">
+							<div class="col about">
+								<div class="productImg">
+									<img src="../images/content/product1.jpg" alt="">
+								</div>
+								<div class="infoProduct">
+									<div class="nameProduct">
+										Блузка женская
+									</div>
+									<div class="color">
+										Цвет: белый
+									</div>
+									<div class="aticule">
+										Артикул: 545451
+									</div>
+								</div>
+							</div>
+							<div class="col size">
+								<select name="" class="sizeSelect">
+									<option value="">L</option>
+									<option value="">XL</option>
+									<option value="">M</option>
+									<option value="">XXL</option>
+								</select>
+							</div>
+							<div class="col height">
+								<select name="" class="sizeSelect">
+									<option value="">164 см</option>
+									<option value="">170 см</option>
+									<option value="">175 см</option>
+									<option value="">189 см</option>
+								</select>
+							</div>
+							<div class="col price">
+								<div>Ожидается доставка</div>
+							</div>
+							<div class="col close">
+								<div class="close">
+									<img src="../images/icons/rmParamRed.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="row just">
+							<div class="col about">
+								<div class="productImg">
+									<img src="../images/content/product1.jpg" alt="">
+								</div>
+								<div class="infoProduct">
+									<div class="nameProduct">
+										Блузка женская
+									</div>
+									<div class="color">
+										Цвет: белый
+									</div>
+									<div class="aticule">
+										Артикул: 545451
+									</div>
+								</div>
+							</div>
+							<div class="col size">
+								<select name="" class="sizeSelect">
+									<option value="">L</option>
+									<option value="">XL</option>
+									<option value="">M</option>
+									<option value="">XXL</option>
+								</select>
+							</div>
+							<div class="col height">
+								<select name="" class="sizeSelect">
+									<option value="">164 см</option>
+									<option value="">170 см</option>
+									<option value="">175 см</option>
+									<option value="">189 см</option>
+								</select>
+							</div>
+							<div class="col price">
+								<div>Нет в наличии</div>
+							</div>
+							<div class="col close">
+								<div class="close">
+									<img src="../images/icons/rmParamRed.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="sector6 sectors" id="fragment-6">
+					<div class="title">Мои скидки</div>
+						<div class="line">
+							<div class="percentNum">30%</div>
+								<div class="aboutDropPrice">
+								— за преданность магазину
+								</div>
+						</div>
+						<div class="line">
+							<div class="percentNum">1%</div>
+								<div class="aboutDropPrice">
+								— персональная скидка. Что бы получить скидку в 2% приобретите товара еще на 10 000 рублей.
+								</div>
+						</div>
+						<div class="line">
+							<div class="percentNum">30%</div>
+								<div class="aboutDropPrice">
+								— за преданность магазину
+								</div>
+						</div>
+						<div class="line">
+							<div class="percentNum">1%</div>
+								<div class="aboutDropPrice">
+								— персональная скидка. Что бы получить скидку в <b>2%</b> приобретите товара еще на 10 000 рублей.
+								</div>
 						</div>
 						
 				</div>

@@ -58,6 +58,48 @@
   border: 0 !important;
 }
 
+.content .sector2 .title {
+  float: left;
+}
+
+.content .sector2 .cehcPoint {
+  float: right;
+}
+
+.content .sector2 .cehcPoint span {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+  padding-left: 10px;
+}
+
+.content .sector2 .cehcPoint .psevodCheckBox {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #e9e9e9;
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.content .sector2 .cehcPoint .psevodCheckBox[data-status="on"] {
+  background-image: url("../images/icons/arrowPodpiska.png");
+}
+
+.content .sector2 .cehcPoint .psevodCheckBox input {
+  display: none;
+  float: left;
+}
+
+.content .sector2 .row {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
 .content .sectors {
   width: 100%;
   background-color: #f8f8f8;
@@ -179,6 +221,39 @@
   clear: both;
 }
 
+.content .sectors .moreAddress {
+  width: 245px;
+  height: 50px;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #e9e9e9;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #b01b52;
+  text-transform: uppercase;
+  float: left;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.content .sectors .moreAddress:hover {
+  opacity: .9;
+}
+
 .content .sectors .keyRefresh {
   float: right;
   display: block;
@@ -197,7 +272,7 @@
   -webkit-transition-duration: .5s;
   -o-transition-duration: .5s;
   transition-duration: .5s;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .content .sectors .keyRefresh:hover {
@@ -262,6 +337,478 @@
   font-weight: 300;
   font-family: 'Roboto' , sans-serif;
   padding-left: 10px;
+}
+
+.content .sector6 .line {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.content .sector6 .percentNum {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #a41f56;
+  font-weight: 700;
+  float: left;
+}
+
+.content .sector6 .aboutDropPrice {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  float: left;
+}
+
+.content .sector6 .aboutDropPrice b {
+  font-weight: 700;
+}
+
+.content .sector5 {
+  background-color: transparent;
+}
+
+.content .sector5 .row.firstRow {
+  background-color: #f8f8f8;
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 10px 0;
+}
+
+.content .sector5 .row.firstRow .col {
+  float: left;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  min-height: 1px;
+  text-align: center;
+}
+
+.content .sector5 .row.firstRow .col.about {
+  width: 415px;
+}
+
+.content .sector5 .row.firstRow .col.size {
+  width: 190px;
+}
+
+.content .sector5 .row.firstRow .col.height {
+  width: 190px;
+}
+
+.content .sector5 .row.firstRow .col.count {
+  width: 190px;
+}
+
+.content .sector5 .row.firstRow .col.price {
+  width: 190px;
+}
+
+.content .sector5 .row.firstRow .col.close {
+  width: 95px;
+}
+
+.content .sector5 .row.just {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content .sector5 .row.just .col {
+  float: left;
+}
+
+.content .sector5 .row.just .col.about {
+  width: 415px;
+}
+
+.content .sector5 .row.just .col.about .productImg {
+  float: left;
+}
+
+.content .sector5 .row.just .col.about img {
+  width: 50px;
+  margin: 0px 30px 0 10px;
+}
+
+.content .sector5 .row.just .col.about .infoProduct {
+  display: block;
+  float: left;
+}
+
+.content .sector5 .row.just .col.about .infoProduct .nameProduct {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.content .sector5 .row.just .col.about .infoProduct .color, .content .sector5 .row.just .col.about .infoProduct .aticule {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.content .sector5 .row.just .col.size {
+  width: 190px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.content .sector5 .row.just .col.height {
+  width: 190px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.content .sector5 .row.just .col.height .customSelectInner {
+  width: 100% !important;
+  text-align: left;
+}
+
+.content .sector5 .row.just .col.count {
+  width: 190px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.content .sector5 .row.just .col.count .countField {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.content .sector5 .row.just .col.count input {
+  width: 45px;
+  background-color: #f8f8f8;
+  border: 0;
+  height: 35px;
+  float: left;
+  text-align: center;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #666666;
+}
+
+.content .sector5 .row.just .col.count .minus {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+.content .sector5 .row.just .col.count .plus {
+  float: left;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: block;
+  cursor: pointer;
+}
+
+.content .sector5 .row.just .col.price {
+  width: 190px;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.content .sector5 .row.just .col.price div {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+}
+
+.content .sector5 .row.just .col.close {
+  width: 95px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.content .sector5 .row.just .col.close * {
+  cursor: pointer;
+}
+
+.content .sector5 .row.just .col .prcieNum {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  color: #000;
+  margin: 5px 0 10px;
+}
+
+.content .sector5 .row.just .col .dropPrice {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 12px;
+  color: #ae1b4f;
+  font-weight: 300;
+}
+
+.content .sector5 .customSelect {
+  font: 14px sans-serif;
+  background: #fff url("../images/icons/arrowBottom.png") right 10px center no-repeat;
+  border: 1px solid #ddd;
+  color: #555;
+  -webkit-border-radius: 2px;
+  border-radius: 2px 2px;
+  width: 155px;
+  height: 35px;
+  padding: 10px 10px 15px 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+  font-family: 'Roboto' , sans-serif;
+  color: #b01b52;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 0;
+  background-color: #f8f8f8;
+  text-align: left;
+}
+
+.content .sector5 .height .customSelect {
+  text-transform: lowercase;
+}
+
+.content .sector5 .result {
+  width: 100%;
+  float: left;
+  clear: both;
+  border: 1px solid #e9e9e9;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 25px 20px 10px;
+  margin-top: 20px;
+}
+
+.content .sector5 .result .promocode {
+  float: left;
+}
+
+.content .sector5 .result .promocode .textField {
+  width: 190px;
+  height: 30px;
+  border: 1px solid #e9e9e9;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content .sector5 .result .promocode .sendField {
+  width: 175px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #f8f8f8;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #ae1b4f;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.content .sector5 .result .infoOrder {
+  float: right;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-align: right;
+  font-weight: 300;
+}
+
+.content .sector5 .result .infoOrder > div {
+  margin-bottom: 10px;
+}
+
+.content .sector5 .result .infoOrder b {
+  font-weight: 700;
+}
+
+.content .sector5 .result .infoOrder .breakPrice {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.content .sector5 .result .infoOrder .breakPrice:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #b01b52;
+  top: 50%;
+}
+
+.content .sector4 {
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content .sector4 .productHistory .row {
+  width: 100%;
+  float: left;
+  clear: both;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.content .sector4 .productHistory .row > div {
+  padding-top: 55px;
+}
+
+.content .sector4 .productHistory .about {
+  width: 21.2%;
+  float: left;
+  padding-top: 35px !important;
+}
+
+.content .sector4 .productHistory .productImg {
+  width: 55px;
+  float: left;
+  margin-right: 20px;
+}
+
+.content .sector4 .productHistory .productImg img {
+  width: 100%;
+}
+
+.content .sector4 .productHistory .infoProduct .nameProduct {
+  font-family: 'Source Sans Pro' , sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+.content .sector4 .productHistory .infoProduct .color, .content .sector4 .productHistory .infoProduct .aticule {
+  font-family: 'Roboto' ,sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+}
+
+.content .sector4 .productHistory .size {
+  width: 13.7%;
+  float: left;
+}
+
+.content .sector4 .productHistory .size div {
+  font-family: 'Roboto' ,sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  display: block;
+}
+
+.content .sector4 .productHistory .size div span {
+  display: block;
+}
+
+.content .sector4 .productHistory .priceCount {
+  width: 13.7%;
+  float: left;
+}
+
+.content .sector4 .productHistory .priceCount div {
+  font-family: 'Roboto' ,sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  display: block;
+}
+
+.content .sector4 .productHistory .priceCount div span {
+  display: block;
+}
+
+.content .sector4 .productHistory .dropPrice {
+  width: 18.4%;
+  float: left;
+}
+
+.content .sector4 .productHistory .dropPrice div {
+  font-family: 'Roboto' ,sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  display: block;
+}
+
+.content .sector4 .productHistory .dropPrice div span {
+  display: block;
+}
+
+.content .sector4 .table {
+  width: 100%;
+  float: left;
+  center: both;
+}
+
+.content .sector4 .table .id {
+  width: 5.25%;
+}
+
+.content .sector4 .table .date {
+  width: 25%;
+}
+
+.content .sector4 .table .sumare {
+  width: 24%;
+}
+
+.content .sector4 .table .status {
+  width: 24%;
+}
+
+.content .sector4 .table .variantePay {
+  width: 21%;
+}
+
+.content .sector4 .table .firstRow {
+  background-color: #f8f8f8;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  float: left;
+  clear: both;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.content .sector4 .table .firstRow > div {
+  float: left;
+  text-align: center;
+}
+
+.content .sector4 .table .justTr {
+  border-bottom: 1px solid #e9e9e9;
+  border-top: 1px solid #e9e9e9;
+  float: left;
+  width: 100%;
+  clear: both;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.content .sector4 .table .justTr div {
+  float: left;
+  text-align: center;
+}
+
+.content .sector4 .table .justTr span {
+  font-family: 'Roboto' ,  sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
 }
 
 /*# sourceMappingURL=personal-room.css.map */
