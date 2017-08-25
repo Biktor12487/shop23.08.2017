@@ -1,0 +1,668 @@
+.popularProducts {
+  padding: 15px 0 45px;
+}
+
+.popularProducts .title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 25px 0 40px;
+}
+
+.popularProducts .owl-carousel {
+  position: relative;
+}
+
+.popularProducts .card {
+  margin: 0 20px;
+  position: relative;
+}
+
+.popularProducts .card.new:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "NEW";
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #00838f;
+  width: 40px;
+  padding: 4px 0;
+  text-align: center;
+  top: 10px;
+}
+
+.popularProducts .card .dropPrice {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "NEW";
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #b01b52;
+  width: 40px;
+  padding: 4px 0;
+  text-align: center;
+  top: 10px;
+}
+
+.popularProducts .card .infoProduct {
+  float: left;
+  width: 120px;
+}
+
+.popularProducts .card .infoProduct .nameProduct {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+.popularProducts .card .infoProduct .price {
+  font-family: 'Roboto' , sans-serif;
+  color: #000;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.popularProducts .card img {
+  margin-bottom: 20px;
+}
+
+.popularProducts .card .addToCart {
+  color: #c3567e;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  width: 110px;
+  height: 30px;
+  float: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Roboto' , sans-serif;
+  cursor: pointer;
+}
+
+.popularProducts .card .breakPrice {
+  color: #000;
+  font-size: 14px;
+  font-family: 'Roboto' , sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+  margin-top: 10px;
+}
+
+.popularProducts .card .breakPrice:before {
+  background-color: #b01b52;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+}
+
+.popularProducts .owl-nav {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+}
+
+.popularProducts .owl-prev, .popularProducts .owl-next {
+  position: absolute;
+  height: 35px;
+  width: 20px;
+  background-repeat: no-repeat;
+  -webkit-background-size: container container;
+  background-size: container;
+}
+
+.popularProducts .owl-prev {
+  left: -20px;
+  background-image: url("../images/icons/popularLeft.png");
+}
+
+.popularProducts .owl-next {
+  right: -20px;
+  background-image: url("../images/icons/popularRight.png");
+}
+
+.youWasSee {
+  padding: 0px 0 50px;
+}
+
+.youWasSee .container {
+  border-top: 1px solid #e9e9e9;
+  padding-top: 30px;
+}
+
+.youWasSee .title {
+  font-family: 'Source Sans Pro' , sans-serif;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+
+.youWasSee .owl-carousel {
+  position: relative;
+}
+
+.youWasSee .owl-nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  width: 100%;
+}
+
+.youWasSee .owl-prev, .youWasSee .owl-next {
+  position: absolute;
+  height: 35px;
+  width: 20px;
+  background-repeat: no-repeat;
+  -webkit-background-size: container container;
+  background-size: container;
+}
+
+.youWasSee .owl-prev {
+  left: -30px;
+  background-image: url("../images/icons/popularLeft.png");
+}
+
+.youWasSee .owl-next {
+  right: -30px;
+  background-image: url("../images/icons/popularRight.png");
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.content .customSelect {
+  color: #b01b52;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #f8f8f8;
+  width: 155px;
+  height: 35px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-image: url("../images/icons/arrowBottomRed.png");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  padding-right: 10px;
+  padding-top: 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.content .title {
+  font-family: 'Source Sans Pro' , sans-serif;
+  font-size: 30px;
+  color: #000;
+  font-weight: 400;
+}
+
+.sliderMint {
+  width: 425px;
+  float: left;
+  margin: 0 65px;
+}
+
+.sliderMint .holste {
+  width: 100%;
+  position: relative;
+}
+
+.sliderMint .holste .navMint {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -15px;
+}
+
+.sliderMint .holste img {
+  width: 100%;
+}
+
+.sliderMint .navMini {
+  text-align: center;
+}
+
+.sliderMint .navMini .wrap {
+  display: inline-block;
+}
+
+.sliderMint .navMini img {
+  width: 90px;
+}
+
+.sliderMint .navMini .link {
+  float: left;
+  margin: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.sliderMint .navMini .link[data-status="active"] {
+  border: 2px solid #b62b5e;
+}
+
+.sliderMint .arrow-prev {
+  left: -30px;
+  background-image: url("../images/icons/popularLeft.png");
+  position: absolute;
+  height: 35px;
+  width: 20px;
+  background-repeat: no-repeat;
+  -webkit-background-size: container container;
+  background-size: container;
+  cursor: pointer;
+}
+
+.sliderMint .arrow-next {
+  right: -30px;
+  background-image: url("../images/icons/popularRight.png");
+  position: absolute;
+  height: 35px;
+  width: 20px;
+  background-repeat: no-repeat;
+  -webkit-background-size: container container;
+  background-size: container;
+  cursor: pointer;
+}
+
+.breakPrice {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  font-size: 300;
+}
+
+.breakPrice:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #b01b52;
+  top: 50%;
+}
+
+.priceNow {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 24px;
+  color: #000;
+  font-weight: 300;
+}
+
+.rigthSector {
+  float: left;
+  width: 585px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.rigthSector .countField {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.rigthSector input {
+  width: 45px;
+  background-color: #f8f8f8;
+  border: 0;
+  height: 35px;
+  float: left;
+  text-align: center;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #666666;
+}
+
+.rigthSector .minus {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+.rigthSector .plus {
+  float: left;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: block;
+  cursor: pointer;
+}
+
+.rigthSector .listShower .row {
+  border-top: 1px solid #e9e9e9;
+}
+
+.rigthSector .listShower .row .topPanel span {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+}
+
+.rigthSector .listShower .row .body {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+.rigthSector ul {
+  list-style: none;
+}
+
+.rigthSector ul b {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  float: left;
+  display: block;
+}
+
+.formRecall .fa-star-o {
+  float: left;
+  margin: 0 1px;
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-image: url("../images/icons/starGrey.png");
+}
+
+.formRecall .fa-star {
+  float: left;
+  margin: 0 1px;
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-image: url("../images/icons/starGold.png");
+}
+
+.formRecall .form {
+  float: left;
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 25px 30px 30px 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.formRecall .form .row {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.formRecall .form .markGroup {
+  float: left;
+  margin-top: 40px;
+}
+
+.formRecall .form .title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.formRecall .form .group {
+  float: left;
+}
+
+.formRecall .form .group .fieldGroup {
+  width: 335px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.formRecall .form .group .fieldGroup label {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  float: left;
+  clear: both;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.formRecall .form .group .fieldGroup input {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid #e9e9e9;
+  display: block;
+  box-sizing: border-box;
+  padding: 4px 5px;
+}
+
+.formRecall .form .veryBigField {
+  width: 710px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.formRecall .form .veryBigField label {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  float: left;
+  clear: both;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.formRecall .form .veryBigField textarea {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 120px;
+  border: 1px solid #e9e9e9;
+  display: block;
+  box-sizing: border-box;
+  padding: 4px 5px;
+}
+
+.formRecall .form .sendKey {
+  float: right;
+  display: block;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #b01b52;
+  border: 0;
+  text-transform: uppercase;
+  width: 185px;
+  height: 50px;
+  background-image: url("../images/icons/orderKeyIcon.png");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 25px;
+  cursor: pointer;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+  margin-top: 30px;
+}
+
+.formRecall .form .sendKey:hover {
+  opacity: .9;
+}
+
+.listRecall {
+  padding: 40px 0 20px;
+}
+
+.listRecall .title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.listRecall .row {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.listRecall .row .showFormAddRecall {
+  width: 225px;
+  height: 50px;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  color: #b01b52;
+  font-weight: 300;
+  background-color: #f8f8f8;
+  text-transform: uppercase;
+  background-image: url("../images/icons/arrowBottomRed.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.listRecall .messList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.listRecall .message {
+  float: left;
+  width: 50%;
+  padding-right: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.listRecall .message .topPanel {
+  padding-bottom: 10px;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.listRecall .message .topPanel .markGroup .star {
+  width: 16px;
+  height: 15px;
+  background-image: url("../images/icons/starGrey.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  float: left;
+  margin: 0 1px;
+}
+
+.listRecall .message .topPanel .markGroup .star.active {
+  background-image: url("../images/icons/starGold.png");
+}
+
+.listRecall .message .name {
+  font-family: 'Roboto' , sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  float: left;
+  margin-right: 10px;
+}
+
+.listRecall .message .bodyMess {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #666666;
+  font-weight: 300;
+}
+
+.row[data-status="hidden"] .topPanel {
+  background-image: url("../images/icons/showerList.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.row[data-status="hidden"] .contenTabs {
+  display: none;
+}
+
+.row[data-status="visible"] .topPanel {
+  background-image: url("../images/icons/hidden: List.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.row[data-status="visible"] .contenTabs {
+  display: block;
+}
+
+/*# sourceMappingURL=node.css.map */

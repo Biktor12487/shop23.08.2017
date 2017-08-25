@@ -106,3 +106,99 @@ var countField = function(){
       }
   }
 }();
+var sliderMint = function(){
+
+  var index = 0;
+  var slider = document.querySelector('.sliderMint');
+  var el = document.querySelectorAll('.link');
+  for (var i = el.length - 1; i >= 0; i--) {
+    el[i].setAttribute('data-index',i)
+  }
+  var el =  slider.querySelectorAll('.link img');
+  for (var i = el.length - 1; i >= 0; i--) {
+    el[i].onclick = function(){
+      index =  this.parentNode.getAttribute('data-index');
+      var src = this.getAttribute('src');
+      var src1 = this.getAttribute('data-src');
+      slider.querySelector('.link[data-status="active"]').removeAttribute('data-status');
+      this.parentNode.setAttribute('data-status','active');
+      slider.querySelector('.holste img').setAttribute('src',src1 || src);
+    }
+  }
+  var left = slider.querySelector('.arrow-prev');
+  var rigth = slider.querySelector('.arrow-next');
+  rigth.onclick = function(){
+    // var inex = Numver(this.getAttribute('data-index'))++;
+    if (index < document.querySelectorAll('.link').length -1) {
+        index ++;
+       var src = document.querySelector('.link[data-index="'+index+'"] img').getAttribute('src');
+        var src1 = document.querySelector('.link[data-index="'+index+'"]').getAttribute('data-src');
+        slider.querySelector('.link[data-status="active"]').removeAttribute('data-status');
+      slider.querySelector('.holste img').setAttribute('src',src1 || src);
+      if (document.querySelector('.link[data-status="active"]')) {
+          document.querySelector('.link[data-status="active"]').removeAttribute('data-status');
+      }
+        document.querySelector('.link[data-index="'+index+'"]').setAttribute('data-status','active');
+    }
+  left.onclick = function(){
+    // var inex = Numver(this.getAttribute('data-index'))++;
+    if (index > 0) {
+        index --;
+       var src = document.querySelector('.link[data-index="'+index+'"] img').getAttribute('src');
+        var src1 = document.querySelector('.link[data-index="'+index+'"]').getAttribute('data-src');
+        slider.querySelector('.link[data-status="active"]').removeAttribute('data-status');
+      slider.querySelector('.holste img').setAttribute('src',src1 || src);
+      if (document.querySelector('.link[data-status="active"]')) {
+          document.querySelector('.link[data-status="active"]').removeAttribute('data-status');
+      }
+        document.querySelector('.link[data-index="'+index+'"]').setAttribute('data-status','active');
+    }
+    
+  }
+    
+  }
+
+}();
+var tabsJust = function(){
+  var el = document.querySelectorAll('.tabs');
+  for (var i = el.length - 1; i >= 0; i--) {
+    el[i].onclick = function(){
+      var id = this.getAttribute('href');
+      if ( getComputedStyle(document.querySelector(id)).display == 'none') {
+        document.querySelector(id).style.display = "block";
+      }
+      else{
+        document.querySelector(id).style.display = "none";
+      }
+    }
+  }
+}();
+
+var tabses = function(){
+  var el = document.querySelectorAll('.tabses');
+  for (var i = el.length - 1; i >= 0; i--) {
+     var e = el[i].querySelectorAll('.link');
+     var body = el[i].querySelectorAll('.row');
+      for (var x = body.length - 1; x >= 0; x--) {
+        body[x].setAttribute('data-status','hidden');
+      }
+  }
+  var el = document.querySelectorAll('.row .link');
+  for (var i = el.length - 1; i >= 0; i--) {
+    el[i].onclick = function(){
+      if (this.parentNode.getAttribute('data-status') == 'hidden') {
+         var href = this.getAttribute('href');
+          if (document.querySelectorAll('.row[data-status="visible"]').length) {
+            document.querySelector('.row[data-status="visible"]').setAttribute('data-status','visible')
+          }
+          console.log(document.querySelector(href).getAttribute('data-status'))
+            document.querySelector(href).setAttribute('data-status','visible');
+      }
+      else{
+        var href = this.getAttribute('href');
+          console.log(document.querySelector(href).getAttribute('data-status'))
+            document.querySelector(href).setAttribute('data-status','hidden');
+      }
+     }
+  }       
+}();
