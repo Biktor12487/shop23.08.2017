@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Shop Pages</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 	<!-- font-family: 'Roboto', sans-serif; -->
@@ -12,6 +13,8 @@
 	<link rel="stylesheet" href="../css/starrr.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/node.css">
+	<link rel="stylesheet" href="../css/responsive-style.css">
+	<link rel="stylesheet" href="../css/responsive-node.css">
 </head>
 <body>
 <!--  -->
@@ -199,7 +202,14 @@
 	</div>
 	<div class="section categoryNav">
 		<div class="container">
-			<div class="navbar">
+			<div class="navbar" data-pon="hidden">
+				<div class="wrap">
+					<div class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
 				<ul>
 					<li data-status="hidden"><span>Женщинам</span>
 						<div class="navContent">
@@ -616,73 +626,96 @@
 	<div class="section popularProducts">
 		<div class="container">
 			<div class="title">ТАКЖЕ РЕКОМЕНДУЕМ</div>
-			<div class="owl-carousel" id="popularProducts-slider">
-				<div class="card new">
-					<img src="../images/content/product1.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Блуза женская, 14775, серый</div>
-						<div class="price">2700 ₽</div>
+			<div class="obl-carousel" id="popularProducts-slider">
+				<div class="stage">
+				<div class="holste">
+					<div class="verticalWrap">
+							<div class="card new">
+								<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="dropPrice">-20%</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+							<img src="../images/content/product3.jpg" alt="">
+							<div class="infoProduct">
+								<div class="nameProduct">Жакет женский, 14775, серый</div>
+								<div class="price"></div>
+							</div>
+							<div class="addToCart">В КОРЗИНУ</div></div>
+						</div>
 					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
+								<div class="verticalWrap">
+							<div class="card new">
+								<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="dropPrice">-20%</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+							<img src="../images/content/product3.jpg" alt="">
+							<div class="infoProduct">
+								<div class="nameProduct">Жакет женский, 14775, серый</div>
+								<div class="price"></div>
+							</div>
+							<div class="addToCart">В КОРЗИНУ</div></div>
+						</div>
+					</div>
 				</div>
-				<div class="card">
-					<img src="../images/content/product2.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
 				</div>
-				<div class="card">
-					<img src="../images/content/product3.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="price">7500 ₽</div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-					<div class="dropPrice">-20%</div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product4.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, черный</div>
-						<div class="price">7700 ₽</div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
-					<div class="card">
-					<img src="../images/content/product1.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="price"></div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product2.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="price"></div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product3.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="price"></div>
-					</div>
-					<div class="addToCart"></div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product4.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="price"></div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>	
+				<div class="owl-nav"><div class="owl-prev disabled"></div><div class="owl-next"></div></div>
 			</div>
 		</div>
 	</div>

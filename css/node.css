@@ -1,5 +1,6 @@
 .popularProducts {
   padding: 15px 0 45px;
+  position: relative;
 }
 
 .popularProducts .title {
@@ -9,13 +10,25 @@
   padding: 25px 0 40px;
 }
 
-.popularProducts .owl-carousel {
+.popularProducts .obl-carousel {
   position: relative;
+  width: 100%;
+}
+
+.popularProducts .obl-carousel .stage {
+  overflow: hidden;
+  width: 100%;
+}
+
+.popularProducts .holste {
+  width: 9999%;
 }
 
 .popularProducts .card {
   margin: 0 20px;
+  float: left;
   position: relative;
+  width: 245px;
 }
 
 .popularProducts .card.new:before {
@@ -128,6 +141,7 @@
   background-repeat: no-repeat;
   -webkit-background-size: container container;
   background-size: container;
+  cursor: pointer;
 }
 
 .popularProducts .owl-prev {
@@ -136,7 +150,7 @@
 }
 
 .popularProducts .owl-next {
-  right: -20px;
+  right: -30px;
   background-image: url("../images/icons/popularRight.png");
 }
 

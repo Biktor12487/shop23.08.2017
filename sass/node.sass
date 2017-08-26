@@ -1,15 +1,24 @@
 .popularProducts 
 	padding: 15px 0 45px
+	position: relative
 	.title
 		font-family: 'Source Sans Pro', sans-serif
 		font-size: 30px
 		text-align: center
 		padding: 25px 0 40px
-	.owl-carousel
+	.obl-carousel
 		position: relative
+		width: 100%
+		.stage
+			overflow: hidden
+			width: 100%
+	.holste
+		width: 9999%
 	.card	
-		margin: 0 20px	
+		margin: 0 20px
+		float: left
 		position: relative
+		width: 245px
 		&.new:before
 			position: absolute
 			top: 0
@@ -91,11 +100,12 @@
 		width: 20px
 		background-repeat: no-repeat
 		background-size: container
+		cursor: pointer
 	.owl-prev
 		left: -20px
 		background-image: url('../images/icons/popularLeft.png')
 	.owl-next
-		right: -20px
+		right: -30px
 		background-image: url('../images/icons/popularRight.png')
 .youWasSee
 	padding: 0px 0 50px

@@ -1,0 +1,215 @@
+@media (max-width: 1185px) {
+  .formRecall .form .group {
+    width: 35%;
+    margin-right: 5%;
+  }
+  .formRecall .form .group .fieldGroup {
+    width: 100%;
+  }
+  .formRecall .form .veryBigField {
+    width: 60%;
+  }
+  .sliderMint {
+    width: 44%;
+    margin: 0 3%;
+  }
+  .rigthSector {
+    width: 50%;
+  }
+  .rigthSector .shareList {
+    right: -20px;
+  }
+  .popularProducts .card {
+    margin: 0 10px;
+    width: 23vw;
+  }
+  .popularProducts .card .infoProduct .nameProduct {
+    font-size: 14px;
+  }
+  .popularProducts .card .infoProduct .price {
+    font-size: 16px;
+  }
+  .popularProducts .card .addToCart {
+    width: 100px;
+    font-size: 14px;
+  }
+  .popularProducts .owl-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  .youWasSee .owl-carousel {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 980px) {
+  .popularProducts .card {
+    margin: 0 10px;
+    width: 30vw;
+  }
+  .sliderMint {
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+    max-width: 390px;
+  }
+  .sliderMint .navMini .link {
+    width: 22%;
+  }
+  .sliderMint .navMini img {
+    width: 100%;
+  }
+  .rigthSector {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .popularProducts .card {
+    width: 30vw;
+  }
+  .popularProducts .card img {
+    width: 100%;
+  }
+  .popularProducts .owl-nav {
+    display: block;
+  }
+  .popularProducts .owl-nav .owl-prev {
+    margin-left: 10px;
+  }
+  .popularProducts .owl-nav .owl-next {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sliderMint {
+    width: 80%;
+  }
+  .listRecall .messList .message {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .formRecall .form {
+    padding: 25px 20px 20px 20px;
+  }
+  .formRecall .form .group {
+    width: 100%;
+    margin-right: 0%;
+  }
+  .formRecall .form .group .fieldGroup {
+    width: 100%;
+  }
+  .formRecall .form .veryBigField {
+    width: 100%;
+  }
+  .formRecall .form .markGroup {
+    float: none;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+  }
+  .formRecall .form .markGroup .wrap {
+    text-align: center;
+  }
+  .formRecall .form .sendKey {
+    width: 100%;
+    background-position: right 30% center;
+  }
+  .youWasSee {
+    display: none;
+  }
+  .popularProducts .container {
+    padding: 0;
+  }
+  .popularProducts .obl-carousel .holste {
+    float: left;
+  }
+  .popularProducts .obl-carousel .verticalWrap {
+    width: 100vw;
+    float: left;
+  }
+  .popularProducts .obl-carousel .card {
+    margin: 20px auto;
+    float: none;
+    clear: both;
+    width: 32vw !important;
+    min-width: 225px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .popularProducts .obl-carousel .card:nth-child(4n) {
+    clear: none;
+  }
+  .popularProducts .obl-carousel .card .psevdoCart {
+    width: 100%;
+  }
+  .popularProducts .owl-nav {
+    top: 50%;
+    margin-left: 0;
+  }
+  .popularProducts .owl-nav .owl-prev {
+    margin-left: 50px;
+  }
+  .popularProducts .owl-nav .owl-next {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 479px) {
+  .formRecall .form .group {
+    width: 100%;
+    margin-right: 0%;
+  }
+  .formRecall .form .group .fieldGroup {
+    width: 100%;
+  }
+  .formRecall .form .veryBigField {
+    width: 100%;
+  }
+  .formRecall .form .markGroup {
+    float: none;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+  }
+  .formRecall .form .markGroup .wrap {
+    text-align: center;
+  }
+  .formRecall .form .sendKey {
+    width: 100%;
+    background-position: right 10% center;
+  }
+  .listRecall .row .showFormAddRecall {
+    width: 100%;
+  }
+  .content .orderKeys .addToCart {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+  .sliderMint .navMini .link {
+    width: 20.5%;
+  }
+  .popularProducts .card {
+    width: 225px !important;
+  }
+  .popularProducts .owl-next {
+    margin-right: 40px !important;
+  }
+  .popularProducts .owl-prev {
+    margin-left: 30px !important;
+  }
+}
+
+/*# sourceMappingURL=responsive-node.css.map */

@@ -50,6 +50,9 @@ $(document).ready(function(){
         items: 6,
       },
       980:{
+        items: 8,
+      },
+       1100:{
         items: 10,
       },
        478:{
