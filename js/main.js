@@ -107,7 +107,6 @@ var countField = function(){
   }
 }();
 var sliderMint = function(){
-
   var index = 0;
   var slider = document.querySelector('.sliderMint');
   var el = document.querySelectorAll('.link');
@@ -128,8 +127,9 @@ var sliderMint = function(){
   var left = slider.querySelector('.arrow-prev');
   var rigth = slider.querySelector('.arrow-next');
   rigth.onclick = function(){
+    console.log(index)
     // var inex = Numver(this.getAttribute('data-index'))++;
-    if (index < document.querySelectorAll('.link').length -1) {
+    if (index < document.querySelectorAll('.sliderMint .link').length -1) {
         index ++;
        var src = document.querySelector('.link[data-index="'+index+'"] img').getAttribute('src');
         var src1 = document.querySelector('.link[data-index="'+index+'"]').getAttribute('data-src');
@@ -141,6 +141,7 @@ var sliderMint = function(){
         document.querySelector('.link[data-index="'+index+'"]').setAttribute('data-status','active');
     }
   left.onclick = function(){
+    console.log(index)
     // var inex = Numver(this.getAttribute('data-index'))++;
     if (index > 0) {
         index --;
