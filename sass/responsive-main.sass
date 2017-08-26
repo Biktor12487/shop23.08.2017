@@ -1,0 +1,131 @@
+@media (max-width:1185px)
+	.categoryCards 
+		.cards
+			display: flex
+			justify-content: space-around
+		.card
+			width: 14%
+			img
+				width: 100%
+				max-height: 200px
+	.popularProducts
+		.owl-nav
+			display: none
+	.carousel , .owl-carousel
+		.owl-nav
+			width: 100vw
+			margin-left: -50vw
+			.owl-prev
+				margin-left: 20px
+			.owl-next
+				margin-right: 20px
+	.popularProducts
+		.card
+			margin: 0 10px
+			.infoProduct
+				.nameProduct
+					font-size: 14px
+				.price
+					font-size: 16px
+			.addToCart 
+				width: 100px
+				font-size: 14px
+	.longSlider
+		.owl-nav
+			width: 100vw
+			margin-left: -50vw
+			.owl-prev
+				margin-left: 20px
+			.owl-next
+				margin-right: 20px
+@media (max-width:1023px)
+	.popularProducts
+		.card
+			width: 220px
+			img
+				width: 100%
+		.owl-nav
+			display: block
+			.owl-prev
+				margin-left: 10px
+			.owl-next
+				margin-right: 10px
+	.categoryCards 
+		.cards
+			display: flex
+			justify-content: space-around
+		.card
+			width: 14%
+			img
+				width: 100%
+				max-height: 150px
+			span
+				text-align: center
+	.carousel 
+		height: 300px
+		.owl-item
+			*
+				height: 300px !important
+@media (max-width:768px)
+	.carousel
+		height: 200px
+		.owl-carousel
+			height: 200px
+			.owl-item
+				*
+					height: 200px !important
+	.categoryCards
+		.cards
+			flex-wrap: wrap
+			.card
+				width: 30.3%
+				margin: 10px 0
+				img
+					height: 185px
+					max-height: 185px
+	.carousel .owl-carousel .owl-dots
+		bottom: 10px
+	.popularProducts
+		.container
+			padding: 0
+		.obl-carousel
+			.holste
+				float: left
+			.verticalWrap
+				width: 100vw
+				float: left
+			.card
+				margin: 20px auto
+				float: none
+				clear: both
+				width: 225px
+				display: flex
+				justify-content: space-around
+				&:nth-child(4n)
+					clear: none
+				.psevdoCart
+					width: 100%
+		.owl-nav
+			top: 50%
+			margin-left: 0
+			.owl-prev
+				margin-left: 50px
+			.owl-next
+				margin-right: 50px
+@media (max-width:479px)
+	.popularProducts
+		.card
+			width: 200px !important
+		.owl-next
+			margin-right: 40px !important
+		.owl-prev
+				margin-left: 30px !important
+	.categoryCards
+		.cards
+			flex-wrap: wrap
+			.card
+				width: 45%
+				margin: 10px 0
+				img
+					height: 185px
+					max-height: 185px

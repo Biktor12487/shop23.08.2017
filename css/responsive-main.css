@@ -1,0 +1,191 @@
+@media (max-width: 1185px) {
+  .categoryCards .cards {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .categoryCards .card {
+    width: 14%;
+  }
+  .categoryCards .card img {
+    width: 100%;
+    max-height: 200px;
+  }
+  .popularProducts .owl-nav {
+    display: none;
+  }
+  .carousel .owl-nav, .owl-carousel .owl-nav {
+    width: 100vw;
+    margin-left: -50vw;
+  }
+  .carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-prev {
+    margin-left: 20px;
+  }
+  .carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-next {
+    margin-right: 20px;
+  }
+  .popularProducts .card {
+    margin: 0 10px;
+  }
+  .popularProducts .card .infoProduct .nameProduct {
+    font-size: 14px;
+  }
+  .popularProducts .card .infoProduct .price {
+    font-size: 16px;
+  }
+  .popularProducts .card .addToCart {
+    width: 100px;
+    font-size: 14px;
+  }
+  .longSlider .owl-nav {
+    width: 100vw;
+    margin-left: -50vw;
+  }
+  .longSlider .owl-nav .owl-prev {
+    margin-left: 20px;
+  }
+  .longSlider .owl-nav .owl-next {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .popularProducts .card {
+    width: 220px;
+  }
+  .popularProducts .card img {
+    width: 100%;
+  }
+  .popularProducts .owl-nav {
+    display: block;
+  }
+  .popularProducts .owl-nav .owl-prev {
+    margin-left: 10px;
+  }
+  .popularProducts .owl-nav .owl-next {
+    margin-right: 10px;
+  }
+  .categoryCards .cards {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .categoryCards .card {
+    width: 14%;
+  }
+  .categoryCards .card img {
+    width: 100%;
+    max-height: 150px;
+  }
+  .categoryCards .card span {
+    text-align: center;
+  }
+  .carousel {
+    height: 300px;
+  }
+  .carousel .owl-item * {
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 200px;
+  }
+  .carousel .owl-carousel {
+    height: 200px;
+  }
+  .carousel .owl-carousel .owl-item * {
+    height: 200px !important;
+  }
+  .categoryCards .cards {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .categoryCards .cards .card {
+    width: 30.3%;
+    margin: 10px 0;
+  }
+  .categoryCards .cards .card img {
+    height: 185px;
+    max-height: 185px;
+  }
+  .carousel .owl-carousel .owl-dots {
+    bottom: 10px;
+  }
+  .popularProducts .container {
+    padding: 0;
+  }
+  .popularProducts .obl-carousel .holste {
+    float: left;
+  }
+  .popularProducts .obl-carousel .verticalWrap {
+    width: 100vw;
+    float: left;
+  }
+  .popularProducts .obl-carousel .card {
+    margin: 20px auto;
+    float: none;
+    clear: both;
+    width: 225px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .popularProducts .obl-carousel .card:nth-child(4n) {
+    clear: none;
+  }
+  .popularProducts .obl-carousel .card .psevdoCart {
+    width: 100%;
+  }
+  .popularProducts .owl-nav {
+    top: 50%;
+    margin-left: 0;
+  }
+  .popularProducts .owl-nav .owl-prev {
+    margin-left: 50px;
+  }
+  .popularProducts .owl-nav .owl-next {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 479px) {
+  .popularProducts .card {
+    width: 200px !important;
+  }
+  .popularProducts .owl-next {
+    margin-right: 40px !important;
+  }
+  .popularProducts .owl-prev {
+    margin-left: 30px !important;
+  }
+  .categoryCards .cards {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .categoryCards .cards .card {
+    width: 45%;
+    margin: 10px 0;
+  }
+  .categoryCards .cards .card img {
+    height: 185px;
+    max-height: 185px;
+  }
+}
+
+/*# sourceMappingURL=responsive-main.css.map */
