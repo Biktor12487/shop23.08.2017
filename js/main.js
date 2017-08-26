@@ -164,6 +164,7 @@ var tabsJust = function(){
   for (var i = el.length - 1; i >= 0; i--) {
     el[i].onclick = function(){
       var id = this.getAttribute('href');
+        console.log(id)
       if ( getComputedStyle(document.querySelector(id)).display == 'none') {
         document.querySelector(id).style.display = "block";
       }
