@@ -1,0 +1,84 @@
+@media (min-width: 1186px) and (max-width: 1500px) {
+  .youWasSee .owl-carousel {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .youWasSee .owl-nav .owl-prev {
+    left: -24px;
+  }
+  .youWasSee .owl-nav .owl-next {
+    right: -24px;
+  }
+}
+
+@media (max-width: 1185px) {
+  .youWasSee .owl-carousel {
+    width: 97%;
+    margin: 0 auto;
+  }
+  .youWasSee .owl-nav .owl-prev {
+    left: -24px;
+  }
+  .youWasSee .owl-nav .owl-next {
+    right: -24px;
+  }
+  .content .rightSector {
+    width: 74.5%;
+  }
+  .content .rightSector .card {
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .content .rightSector .card img {
+    width: 100%;
+  }
+  .content .rightSector .card .infoProduct .nameProduct {
+    font-size: 14px;
+  }
+  .content .rightSector .card .addToCart {
+    width: 100px;
+  }
+  .content .leftSector {
+    padding-right: 1%;
+    width: 25.5%;
+  }
+}
+
+@media (max-width: 980px) {
+  .content .leftSector {
+    display: none;
+  }
+  .content .rightSector {
+    width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .content .rightSector .card {
+    width: 98%;
+    max-width: 255px;
+    float: none;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .sortPosition .wrap .chooseParams {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .sort .first > li > span {
+    -webkit-background-size: 10px auto;
+    background-size: 10px auto;
+    padding-right: 25px;
+  }
+}
+
+/*# sourceMappingURL=responsive-products.css.map */

@@ -45,6 +45,21 @@ $(document).ready(function(){
   	nav: true,
   	navText: false,
   	margin: 10,
+    responsive: {
+      766:{
+        items: 6,
+      },
+      980:{
+        items: 10,
+      },
+       478:{
+        items: 3,
+      }
+      ,
+      0:{
+        items: 2,
+      }
+    }
   });
 });
 $(document).ready(function(){
