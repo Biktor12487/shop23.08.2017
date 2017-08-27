@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Shop Pages</title>
 	<link rel="stylesheet" href="../css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="../css/owl.carousel.min.css">
@@ -11,6 +12,8 @@
 	<!-- font-family: 'Roboto', sans-serif; -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<!-- 'Source Sans Pro', sans-serif; -->
+	<link rel="stylesheet" href="../css/responsive-style.css">
+	<link rel="stylesheet" href="../css/responsive-person-room.css">
 </head>
 <body>
 <!-- begin topPanel -->
@@ -52,7 +55,14 @@
 	</div>
 	<div class="section categoryNav">
 		<div class="container">
-			<div class="navbar">
+			<div class="navbar" data-pon="hidden">
+			<div class="wrap">
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
 				<ul>
 					<li data-status="hidden"><span>Женщинам</span>
 						<div class="navContent">
@@ -365,21 +375,22 @@
 							<div class="variantePay"><span>Способ оплаты</span></div>
 						</div>
 						<div class="justTr firstLn">
-							<div class="id"><span>1</span></div>
-							<div class="date"><span>20.09.2017</span></div>
-							<div class="sumare"><span>2700 руб</span></div>
-							<div class="status"><span>Доставлено</span></div>
-							<div class="variantePay"><span>Наличные</span></div>
+							<div class="id"><div class="res"><span>#</span></div><span>1</span></div>
+							<div class="date"><div class="res"><span>Дата заказа</span></div><span>20.09.2017</span></div>
+							<div class="sumare"><div class="res"><span>Сумма</span></div><span>2700 руб</span></div>
+							<div class="status"><div class="res"><span>Статус</span></div><span>Доставлено</span></div>
+							<div class="variantePay"><div class="res"><span>Способ оплаты</span></div><span>Наличные</span></div>
 						</div>
-						<div class="justTr">
-							<div class="id"><span>2</span></div>
-							<div class="date"><span>20.09.2017</span></div>
-							<div class="sumare"><span>2700 руб</span></div>
-							<div class="status"><span>Комплектутся</span></div>
-							<div class="variantePay"><span>Наличные</span></div>
-						</div>
+					
 
 						<div class="productHistory">
+								<div class="justTr">
+									<div class="id"><div class="res"><span>#</span></div><span>1</span></div>
+									<div class="date"><div class="res"><span>Дата заказа</span></div><span>20.09.2017</span></div>
+									<div class="sumare"><div class="res"><span>Сумма</span></div><span>2700 руб</span></div>
+									<div class="status"><div class="res"><span>Статус</span></div><span>Доставлено</span></div>
+									<div class="variantePay"><div class="res"><span>Способ оплаты</span></div><span>Наличные</span></div>
+								</div>
 							<div class="row">
 									<div class="col about">
 										<div class="productImg">
@@ -487,6 +498,7 @@
 								</div>
 							</div>
 							<div class="col size">
+								<div class="res">Размер</div>
 								<select name="" class="sizeSelect">
 									<option value="">L</option>
 									<option value="">XL</option>
@@ -495,6 +507,7 @@
 								</select>
 							</div>
 							<div class="col height">
+								<div class="res">Рост</div>
 								<select name="" class="sizeSelect">
 									<option value="">164 см</option>
 									<option value="">170 см</option>
@@ -503,6 +516,7 @@
 								</select>
 							</div>
 							<div class="col price">
+								<div class="res">Цена</div>
 								<div>Ожидается доставка</div>
 							</div>
 							<div class="col close">
@@ -529,6 +543,7 @@
 								</div>
 							</div>
 							<div class="col size">
+								<div class="res">Размер</div>
 								<select name="" class="sizeSelect">
 									<option value="">L</option>
 									<option value="">XL</option>
@@ -537,6 +552,7 @@
 								</select>
 							</div>
 							<div class="col height">
+								<div class="res">Рост</div>
 								<select name="" class="sizeSelect">
 									<option value="">164 см</option>
 									<option value="">170 см</option>
@@ -545,6 +561,7 @@
 								</select>
 							</div>
 							<div class="col price">
+									<div class="res">Цена</div>
 								<div>Нет в наличии</div>
 							</div>
 							<div class="col close">
@@ -677,6 +694,7 @@
 	<script src="../js/jquery.customSelect.min.js"></script>
 	<script src="../js/jquery-ui.min.js"></script>
 	<script src="../js/main.js"></script>
+		<script src="../js/nave.js"></script>
 	<script>
 		$( function() {
 		    $( ".tabs" ).tabs({

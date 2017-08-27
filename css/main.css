@@ -278,9 +278,9 @@
 .longSlider .owl-nav {
   position: absolute;
   top: 50%;
-  width: 100%;
-  left: 50%;
-  margin-left: -570px;
+  width: 1150px;
+  margin-left: 575px;
+  margin: 0 auto;
 }
 
 .longSlider .owl-nav .owl-prev, .longSlider .owl-nav .owl-next {
