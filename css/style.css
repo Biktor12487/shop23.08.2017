@@ -484,4 +484,604 @@ body {
   color: #fff !important;
 }
 
+@-webkit-keyframes dropTop {
+  0% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: 100px;
+  }
+}
+
+@keyframes dropTop {
+  0% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: 100px;
+  }
+}
+
+.modalWindow {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: none;
+}
+
+.modalWindow[data-modal-status="visab"] {
+  display: block;
+}
+
+.modalWindow[data-modal-status="visab"] .contentWindowModal {
+  margin-top: 100px;
+  -webkit-animation: dropTop .5s;
+  animation: dropTop .5s;
+}
+
+.modalWindow[data-modal-status="hidden"] {
+  display: none;
+}
+
+.modalWindow[data-modal-status="hidden"] .contentWindowModal {
+  margin-top: -100px;
+  -webkit-animation: dropTop .5s;
+  animation: dropTop .5s;
+}
+
+.modalWindow .close {
+  cursor: pointer;
+}
+
+.modalWindow .contentWindowModal {
+  margin: -100px auto 0 auto;
+  -webkit-animation: dropTop .5s;
+  animation: dropTop .5s;
+  position: relative;
+}
+
+.modalWindow .contentWindowModal .close {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -15px;
+  left: 100%;
+  margin-left: -10px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #ae1c51;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/icons/rmParamRed.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sizeWindow .contentWindowModal {
+  width: 670px;
+  max-width: 80%;
+  background-color: #fff;
+  padding: 30px  15px 15px 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sizeWindow .contentWindowModal .table {
+  border: 1px solid #010101;
+}
+
+.sizeWindow .contentWindowModal .table .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-bottom: 1px solid #808080;
+}
+
+.sizeWindow .contentWindowModal .table .row:last-child {
+  border: 0;
+}
+
+.sizeWindow .contentWindowModal .table .col {
+  width: 33.3%;
+  text-align: center;
+  border-right: 1px solid #808080;
+}
+
+.sizeWindow .contentWindowModal .table .col:last-child {
+  border: 0;
+}
+
+.sizeWindow .contentWindowModal .table .firstRow .col b {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sizeWindow .contentWindowModal .table .justRow .col span {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sizeWindow .contentWindowModal .title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.orderWindow .contentWindowModal {
+  width: 400px;
+  background-color: #fff;
+  padding: 40px 30px 20px 30px;
+  max-width: 80%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.orderWindow .contentWindowModal .title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.orderWindow .contentWindowModal .fieldGroup {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  float: left;
+}
+
+.orderWindow .contentWindowModal .fieldGroup label {
+  font-family: 'Roboto' , sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  display: block;
+  width: 100px;
+  float: left;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.orderWindow .contentWindowModal .fieldGroup .inpt {
+  width: 255px;
+  max-width: 65%;
+  height: 40px;
+  border: 1px solid #e9e9e9;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.orderWindow .contentWindowModal .fieldGroup .customSelect {
+  display: block;
+  float: right;
+  color: #999999;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  width: 255px;
+  height: 40px;
+  padding-left: 20px;
+  background-image: url("../images/icons/arrowBottom.png");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding-top: 10px;
+  border: 1px solid #e9e9e9;
+  max-width: 65%;
+}
+
+.orderWindow .contentWindowModal .fieldGroup select {
+  right: 0;
+  top: 0;
+}
+
+.orderWindow .contentWindowModal .fieldGroup .phoneField {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #999999;
+}
+
+.orderWindow .contentWindowModal .wrap {
+  text-align: center;
+}
+
+.orderWindow .contentWindowModal .orderNow {
+  font-family: 'Roboto' ,sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #b01b52;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+  height: 50px;
+  padding: 0 28px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.orderWindow .contentWindowModal .orderNow:hover {
+  opacity: .9;
+}
+
+.callBackWindow .contentWindowModal {
+  width: 400px;
+  background-color: #fff;
+  padding: 40px 30px 20px 30px;
+  max-width: 80%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.callBackWindow .contentWindowModal .title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.callBackWindow .contentWindowModal .fieldGroup {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  float: left;
+}
+
+.callBackWindow .contentWindowModal .fieldGroup label {
+  font-family: 'Roboto' , sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  display: block;
+  width: 100px;
+  float: left;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.callBackWindow .contentWindowModal .fieldGroup .inpt {
+  width: 255px;
+  height: 40px;
+  border: 1px solid #e9e9e9;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  max-width: 65%;
+}
+
+.callBackWindow .contentWindowModal .fieldGroup .customSelect {
+  max-width: 65%;
+  display: block;
+  float: right;
+  color: #999999;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  width: 255px;
+  height: 40px;
+  padding-left: 20px;
+  background-image: url("../images/icons/arrowBottom.png");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding-top: 10px;
+  border: 1px solid #e9e9e9;
+}
+
+.callBackWindow .contentWindowModal .fieldGroup select {
+  right: 0;
+  top: 0;
+  max-width: 65%;
+}
+
+.callBackWindow .contentWindowModal .fieldGroup .phoneField {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #999999;
+  max-width: 65%;
+}
+
+.callBackWindow .contentWindowModal .wrap {
+  text-align: center;
+}
+
+.callBackWindow .contentWindowModal .orderNow {
+  font-family: 'Roboto' ,sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #b01b52;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+  height: 50px;
+  padding: 0 28px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.callBackWindow .contentWindowModal .orderNow:hover {
+  opacity: .9;
+}
+
+.orderWindow .contentWindowModal {
+  width: 500px;
+  max-width: 85%;
+}
+
+.orderWindow .img {
+  width: 50px;
+  float: left;
+  margin-right: 20px;
+}
+
+.orderWindow .img img {
+  width: 100%;
+}
+
+.orderWindow .aboutProduct {
+  float: left;
+  width: 50%;
+}
+
+.orderWindow .aboutProduct .nameProduct {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin-top: 20px;
+}
+
+.orderWindow .aboutProduct .color {
+  color: #000;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.orderWindow .paramProduct {
+  float: right;
+}
+
+.orderWindow .paramProduct .orderSelect {
+  width: 155px;
+  height: 35px;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #b01b52;
+  font-weight: 300;
+  background-color: #f8f8f8;
+  text-transform: uppercase;
+  background-image: url("../images/icons/arrowBottom.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  float: right;
+  clear: both;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.orderWindow .paramProduct .customSelectInner {
+  padding-top: 10px;
+}
+
+.orderWindow .wrap {
+  width: 100%;
+}
+
+.orderWindow .wrap .colInfo {
+  float: left;
+  width: 200px;
+  margin-top: 75px;
+}
+
+.orderWindow .wrap .colInfo .priceWill {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+.orderWindow .wrap .colInfo .breakPrice {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  position: relative;
+  display: inline-block;
+}
+
+.orderWindow .wrap .colInfo .breakPrice:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #b01b52;
+  top: 50%;
+}
+
+.orderWindow .wrap .colInfo .countField {
+  display: inline-block;
+  float: left;
+}
+
+.orderWindow .wrap .colInfo .countField input {
+  width: 45px;
+  background-color: #f8f8f8;
+  border: 0;
+  height: 35px;
+  float: left;
+  text-align: center;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #666666;
+}
+
+.orderWindow .wrap .colInfo .countField .minus {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+.orderWindow .wrap .colInfo .countField .plus {
+  float: left;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: block;
+  cursor: pointer;
+}
+
+.orderWindow .wrap .orderNow {
+  margin-top: 30px;
+  margin-left: 85px;
+}
+
+.deleteProduct .contentWindowModal {
+  width: 400px;
+  max-width: 85%;
+  background-color: #fff;
+  padding: 30px 15px 20px 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.deleteProduct .contentWindowModal .about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.deleteProduct .contentWindowModal .productImg {
+  float: left;
+  margin-right: 20px;
+}
+
+.deleteProduct .contentWindowModal .productImg img {
+  width: 50px;
+}
+
+.deleteProduct .contentWindowModal .nameProduct {
+  font-family: 'Source Sans Pro' , sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.deleteProduct .contentWindowModal .color {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+}
+
+.deleteProduct .contentWindowModal .title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  text-transform: unset !important;
+}
+
+.deleteProduct .contentWindowModal .animKey {
+  color: #b01b52;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #f8f8f8;
+  border: 0;
+  width: 40%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.deleteProduct .contentWindowModal .removeKey {
+  float: right;
+}
+
+.deleteProduct .contentWindowModal .wrap {
+  margin-top: 60px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,36 @@
 	<link rel="stylesheet" href="../css/responsive-cart.css">
 </head>
 <body>
-
+<!-- call Back-->
+<div data-modal-window="callBack" class="modalWindow callBackWindow">
+		<div class="contentWindowModal">
+			<div class="topPanelWindow">
+				<div class="close"></div>
+			</div>
+			<div class="bodyContentWindow">
+				<div class="title">Заказ обратного звонка</div>
+				<div class="fieldGroup">
+					<label for="">Ваше имя</label>
+					<input type="text" class="textField inpt">
+				</div>
+				<div class="fieldGroup">
+					<label for="">Страна</label>
+					<select name="" class="orderSelect customSelect countrySelect">
+						<option value="ru">Россия</option>
+						<option value="ua">Украина</option>
+					</select>
+				</div>
+				<div class="fieldGroup">
+					<label for="">Телефон</label>
+					<input type="text" class="phoneField inpt" placeholder="+7 (___) ___-__-__">
+				</div>
+				<div class="wrap">
+					<input type="submit" class="orderNow animKey" value="ЗАКАЗАТЬ ЗВОНОК">
+				</div>
+			</div>
+		</div>
+</div>
+<!--  -->
 <!-- begin topPanel -->
 	<div class="section topPanel">
 		<div class="container">
@@ -35,7 +64,7 @@
 				<a href=""><img src="../images/icons/ok.png" alt=""></a>
 				<a href=""><img src="../images/icons/in.png" alt=""></a>
 			</div>
-			<div class="callBack"><a href="tel:+74957739180"> +7 (495) 773-91-80</a><div class="keyCallBack"><span>Заказать звонок</span></div></div>
+			<div class="callBack"><a href="tel:+74957739180"> +7 (495) 773-91-80</a><div class="keyCallBack"><span data-modal-id="callBack" class="	btn modalKey">Заказать звонок</span></div></div>
 			</div>
 	</div>
 	<div class="section searchTop">
@@ -320,11 +349,41 @@
 						<div class="dropPrice">Скидка по промокоду 30%</div>
 					</div>
 					<div class="col close">
-						<div class="close">
+						<div class="close btn modalKey" data-modal-id="deleteProduct" >
 							<img src="../images/icons/rmParamRed.png" alt="">
 						</div>
 					</div>
 				</div>
+				<!-- deleteElem-->
+				<div data-modal-window="deleteProduct" class="modalWindow deleteProduct">
+						<div class="contentWindowModal">
+							<div class="topPanelWindow">
+								<div class="close"></div>
+							</div>
+							<div class="bodyContentWindow">
+								<div class="title">Уверены что хотите удалить этот товар?</div>
+									<div class="col about">
+										<div class="productImg">
+											<img src="../images/content/product1.jpg" alt="">
+										</div>
+										<div class="infoProduct">
+											<div class="nameProduct">
+												Блузка женская
+											</div>
+											<div class="color">
+												Цвет: белый
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wrap">
+									<input type="submit" class="closeRemove animKey" value="Отмена">
+									<input type="submit" class="removeKey animKey" value="Удалить">
+								</div>
+							</div>
+						</div>
+				</div>
+				<!--  -->
 				<div class="row just">
 					<div class="col about">
 						<div class="productImg">
@@ -379,11 +438,40 @@
 						<div class="dropPrice">Скидка по промокоду 30%</div>
 					</div>
 					<div class="col close">
-						<div class="close">
+						<div class="close btn modalKey" data-modal-id="deleteProduct1">
 							<img src="../images/icons/rmParamRed.png" alt="">
 						</div>
 					</div>
 				</div>
+				<!-- deleteElem-->
+				<div data-modal-window="deleteProduct1" class="modalWindow deleteProduct">
+						<div class="contentWindowModal">
+							<div class="topPanelWindow">
+								<div class="close"></div>
+							</div>
+							<div class="bodyContentWindow">
+								<div class="title">Уверены что хотите удалить этот товар?</div>
+									<div class="col about">
+										<div class="productImg">
+											<img src="../images/content/product1.jpg" alt="">
+										</div>
+										<div class="infoProduct">
+											<div class="nameProduct">
+												Блузка женская
+											</div>
+											<div class="color">
+												Цвет: белый
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wrap">
+									<input type="submit" class="closeRemove animKey" value="Отмена">
+									<input type="submit" class="removeKey animKey" value="Удалить">
+								</div>
+							</div>
+						</div>
+				<!--  -->
 				<div class="result">
 					<div class="promocode">
 						<div class="fieldGroup">
@@ -700,5 +788,6 @@
 	<script src="../js/main.js"></script>
 	<script src="../js/obl.js"></script>
 	<script src="../js/nave.js"></script>
+	<script src="../js/modal.js"></script>
 </body>
 </html>
