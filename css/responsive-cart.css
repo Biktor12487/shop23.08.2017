@@ -1,0 +1,227 @@
+.cart .res {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .cart .row.just .col.about, .cart .row.firstRow .col.about {
+    width: 28%;
+  }
+  .cart .row.just .col.about .infoProduct .nameProduct, .cart .row.firstRow .col.about .infoProduct .nameProduct {
+    font-size: 14px;
+  }
+  .cart .row.just .col.about .infoProduct .aticule, .cart .row.just .col.about .infoProduct .color, .cart .row.firstRow .col.about .infoProduct .aticule, .cart .row.firstRow .col.about .infoProduct .color {
+    font-size: 12px;
+  }
+  .cart .row.just .col.size, .cart .row.firstRow .col.size {
+    width: 15%;
+  }
+  .cart .row.just .col.size .customSelect, .cart .row.firstRow .col.size .customSelect {
+    width: 80%;
+  }
+  .cart .row.just .col.height, .cart .row.firstRow .col.height {
+    width: 15%;
+  }
+  .cart .row.just .col.height .customSelect, .cart .row.firstRow .col.height .customSelect {
+    width: 80%;
+  }
+  .cart .row.just .col.count, .cart .row.firstRow .col.count {
+    width: 15%;
+  }
+  .cart .row.just .col.price, .cart .row.firstRow .col.price {
+    width: 15%;
+  }
+  .cart .row.just .col.close, .cart .row.firstRow .col.close {
+    width: 3%;
+  }
+  .orderSector .form .longField {
+    width: 32%;
+    margin: 10px .5%;
+  }
+  .orderSector .form .smallField {
+    width: 10%;
+    margin: 10px .5%;
+  }
+  .orderSector .form .customSelect {
+    width: 100%;
+  }
+  .orderSector .form .veryLongField {
+    width: 99%;
+    margin: 10px .5%;
+  }
+  .orderSector {
+    margin-bottom: 20px;
+    float: left;
+  }
+  .recomendation .card {
+    width: 28vw;
+    margin: 0 2vw;
+    max-width: 400px;
+  }
+  .recomendation .card img {
+    width: 100%;
+  }
+  .recomendation .owl-nav {
+    display: block;
+  }
+  .recomendation .owl-nav .owl-prev {
+    margin-left: 10px;
+  }
+  .recomendation .owl-nav .owl-next {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 845px) {
+  .cart .result .infoOrder {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cart .firstRow {
+    display: none;
+  }
+  .cart .just {
+    border: 1px solid #e9e9e9;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .cart .just .res {
+    display: block;
+    float: left;
+    padding-right: 20px;
+    font-family: 'Roboto' , sans-serif !important;
+    font-size: 14px	 !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+    margin-top: 10px;
+  }
+  .cart .just .customSelect {
+    min-width: 100px !important;
+    width: 110px !important;
+  }
+  .cart .just > div {
+    width: 100% !important;
+    float: left;
+    clear: both;
+    text-align: left !important;
+  }
+  .cart .close .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .cart .row.just .col.price .breakPrice {
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .cart .row.just .col.price .prcieNum {
+    float: left;
+    margin-right: 10px;
+  }
+  .cart .row.just .col.price .dropPrice {
+    margin-top: 10px;
+  }
+  .orderSector .form {
+    padding: 20px 10px;
+  }
+  .orderSector .form .longField {
+    width: 98%;
+  }
+  .orderSector .form .smallField {
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .orderSector .form .veryLongField textarea {
+    height: 80px;
+  }
+  .cart .result {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .cart .result .promocode {
+    width: 100%;
+  }
+  .cart .result .promocode .textField {
+    width: 50%;
+  }
+  .cart .result .promocode .sendField {
+    margin-left: 3%;
+    width: 45%;
+  }
+  .cart .row.just .col.about, .cart .row.firstRow .col.about {
+    width: 28%;
+  }
+  .cart .row.just .col.about .infoProduct .nameProduct, .cart .row.firstRow .col.about .infoProduct .nameProduct {
+    font-size: 16px;
+  }
+  .cart .row.just .col.about .infoProduct .aticule, .cart .row.just .col.about .infoProduct .color, .cart .row.firstRow .col.about .infoProduct .aticule, .cart .row.firstRow .col.about .infoProduct .color {
+    font-size: 14px;
+  }
+  .recomendation {
+    position: relative;
+  }
+  .obl-carousel .holste {
+    float: left;
+  }
+  .obl-carousel .verticalWrap {
+    width: 100vw;
+    float: left;
+  }
+  .obl-carousel .card {
+    margin: 20px auto;
+    float: none;
+    clear: both;
+    width: 225px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .obl-carousel .card:nth-child(4n) {
+    clear: none;
+  }
+  .obl-carousel .card .psevdoCart {
+    width: 100%;
+  }
+  .owl-nav {
+    top: 50% !important;
+    margin-left: 0;
+  }
+  .owl-nav .owl-prev {
+    margin-left: 50px;
+  }
+  .owl-nav .owl-next {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    overflow-x: hidden;
+  }
+  .cart .result .promocode .textField {
+    width: 100%;
+  }
+  .cart .result .promocode .sendField {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .orderShower .orderShowerKey {
+    width: 100%;
+  }
+  .orderSector .form .sendKey {
+    width: 100%;
+    background-position: right 85px center;
+  }
+}
+
+/*# sourceMappingURL=responsive-cart.css.map */

@@ -178,6 +178,8 @@ body {
 
 .categoryNav {
   width: 100%;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 .categoryNav .navbar {
@@ -464,6 +466,22 @@ body {
   font-size: 12px;
   font-weight: 300;
   color: #999898;
+}
+
+.hidden {
+  display: none;
+}
+
+.animKey {
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.animKey:hover {
+  background-color: #b01b52 !important;
+  opacity: 1 !important;
+  color: #fff !important;
 }
 
 /*# sourceMappingURL=style.css.map */

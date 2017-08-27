@@ -380,6 +380,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 25px 30px 35px 25px;
+  margin-bottom: 40px;
 }
 
 .orderSector .form .title {
@@ -572,13 +573,26 @@
   margin-bottom: 25px;
 }
 
-.recomendation .owl-carousel {
+.recomendation .obl-carousel {
   position: relative;
+  width: 100%;
+}
+
+.recomendation .obl-carousel .stage {
+  overflow: hidden;
+  width: 100%;
+}
+
+.recomendation .holste {
+  width: 9999%;
 }
 
 .recomendation .card {
-  margin: 0 20px;
+  margin: 0 2.5vw;
+  float: left;
   position: relative;
+  width: 20vw;
+  max-width: 215px;
 }
 
 .recomendation .card.new:before {
@@ -610,7 +624,7 @@
   width: 40px;
   padding: 4px 0;
   text-align: center;
-  top: 120pxx;
+  top: 10px;
 }
 
 .recomendation .card .infoProduct {
@@ -634,6 +648,7 @@
 
 .recomendation .card img {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .recomendation .card .addToCart {
@@ -691,6 +706,7 @@
   background-repeat: no-repeat;
   -webkit-background-size: container container;
   background-size: container;
+  cursor: pointer;
 }
 
 .recomendation .owl-prev {
@@ -699,7 +715,7 @@
 }
 
 .recomendation .owl-next {
-  right: -20px;
+  right: -30px;
   background-image: url("../images/icons/popularRight.png");
 }
 

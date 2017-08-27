@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Shop Pages</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/cart.css">
@@ -11,30 +12,244 @@
 	<!-- 'Source Sans Pro', sans-serif; -->
 	<link rel="stylesheet" href="../css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="../css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../css/responsive-style.css">
+	<link rel="stylesheet" href="../css/responsive-cart.css">
 </head>
 <body>
+
 <!-- begin topPanel -->
 	<div class="section topPanel">
 		<div class="container">
-			<a href="" class="logo">
-				<img src="../images/icons/logo.png" alt="">
-			</a>
+			<div class="navbar">
+				<ul>
+					<li><a href="">Вход в кабинет</a></li>
+					<li><a href="">Статьи</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Оплата</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</div>
 			<div class="social">
 				<a href=""><img src="../images/icons/fb.png" alt=""></a>
 				<a href=""><img src="../images/icons/vk.png" alt=""></a>
 				<a href=""><img src="../images/icons/ok.png" alt=""></a>
 				<a href=""><img src="../images/icons/in.png" alt=""></a>
 			</div>
-			<div class="callBack"><a href="tel:+74957739180"> +7 (495) 773-91-80</a><div class="keyCallBack"><span>Заказать звонок</span></div>
-				<div class="box">
-					<!-- empty -->
-					<div class="empty">В корзине нет товаров</div>
-					<!-- isset -->
-				</div>
-				</div>
+			<div class="callBack"><a href="tel:+74957739180"> +7 (495) 773-91-80</a><div class="keyCallBack"><span>Заказать звонок</span></div></div>
 			</div>
 	</div>
-	<!--  -->
+	<div class="section searchTop">
+		<div class="container">
+			<div class="logo"><a href=""><img src="../images/icons/logo.png" alt=""></a></div>
+			<div class="searchField">
+				<form action="">
+					<input type="text" class="textField">
+					<input type="image" class="sendField" value="" src="../images/icons/search.png">
+				</form>
+			</div>
+			<div class="box">
+				<!-- empty -->
+				<div class="empty">В корзине нет товаров</div>
+				<!-- isset -->
+			</div>
+		</div>
+	</div>
+	<div class="section categoryNav">
+		<div class="container">
+			<div class="navbar" data-pon="visab">
+			<div class="wrap">
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+				<ul>
+					<li ><span>Женщинам</span>
+						<div class="navContent">
+							<ul>
+								<li data-more="true">
+									<a href="">Одежда</a>
+									<ul class="col-2">
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+									</ul>
+								</li>
+								<li data-more="true">
+									<a href="">Обувь</a>
+									<ul class="col-1">
+										<li><a href="">Кеды</a></li>
+										<li><a href="">Кроссовки</a></li>
+										<li><a href="">Туфли</a></li>
+									</ul>
+								</li>
+								<li data-more="false"><a href="">Купальники</a></li>
+								<li data-more="false"><a href="">Сумочки</a></li>
+								<li data-more="false"><a href="">Украшения</a></li>
+							</ul>
+							<div class="actionBanner">
+								<img src="images/content/navContent.png" alt="">
+							</div>
+						</div></li>
+					<li ><span>Детям</span>
+					<div class="navContent">
+							<ul>
+								<li data-more="true">
+									<a href="">Одежда</a>
+									<ul class="col-2">
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+									</ul>
+								</li>
+								<li data-more="true">
+									<a href="">Обувь</a>
+									<ul class="col-1">
+										<li><a href="">Кеды</a></li>
+										<li><a href="">Кроссовки</a></li>
+										<li><a href="">Туфли</a></li>
+									</ul>
+								</li>
+								<li data-more="false"><a href="">Купальники</a></li>
+								<li data-more="false"><a href="">Сумочки</a></li>
+								<li data-more="false"><a href="">Украшения</a></li>
+							</ul>
+							<div class="actionBanner">
+								<img src="images/content/navContent.png" alt="">
+							</div>
+						</div</li>
+					<li><span>Для офиса</span>
+					<div class="navContent">
+							<ul>
+								<li data-more="true">
+									<a href="">Одежда</a>
+									<ul class="col-2">
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+									</ul>
+								</li>
+								<li data-more="true">
+									<a href="">Обувь</a>
+									<ul class="col-1">
+										<li><a href="">Кеды</a></li>
+										<li><a href="">Кроссовки</a></li>
+										<li><a href="">Туфли</a></li>
+									</ul>
+								</li>
+								<li data-more="false"><a href="">Купальники</a></li>
+								<li data-more="false"><a href="">Сумочки</a></li>
+								<li data-more="false"><a href="">Украшения</a></li>
+							</ul>
+							<div class="actionBanner">
+								<img src="images/content/navContent.png" alt="">
+							</div>
+						</div></li>
+					<li><span>Большие размеры</span>
+					<div class="navContent">
+							<ul>
+								<li data-more="true">
+									<a href="">Одежда</a>
+									<ul class="col-2">
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+									</ul>
+								</li>
+								<li data-more="true">
+									<a href="">Обувь</a>
+									<ul class="col-1">
+										<li><a href="">Кеды</a></li>
+										<li><a href="">Кроссовки</a></li>
+										<li><a href="">Туфли</a></li>
+									</ul>
+								</li>
+								<li data-more="false"><a href="">Купальники</a></li>
+								<li data-more="false"><a href="">Сумочки</a></li>
+								<li data-more="false"><a href="">Украшения</a></li>
+							</ul>
+							<div class="actionBanner">
+								<img src="images/content/navContent.png" alt="">
+							</div>
+						</div></li>
+					<li><span>Новинки</span>
+					<div class="navContent">
+							<ul>
+								<li data-more="true">
+									<a href="">Одежда</a>
+									<ul class="col-2">
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+									</ul>
+								</li>
+								<li data-more="true">
+									<a href="">Обувь</a>
+									<ul class="col-1">
+										<li><a href="">Кеды</a></li>
+										<li><a href="">Кроссовки</a></li>
+										<li><a href="">Туфли</a></li>
+									</ul>
+								</li>
+								<li data-more="false"><a href="">Купальники</a></li>
+								<li data-more="false"><a href="">Сумочки</a></li>
+								<li data-more="false"><a href="">Украшения</a></li>
+							</ul>
+							<div class="actionBanner">
+								<img src="images/content/navContent.png" alt="">
+							</div>
+						</div></li>
+					<li><span>Акции</span>
+					<div class="navContent">
+							<ul>
+								<li data-more="true">
+									<a href="">Одежда</a>
+									<ul class="col-2">
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+										<li><a href="">Блузки</a></li>
+										<li><a href="">Штаны</a></li>
+										<li><a href="">Пиджаки</a></li>
+									</ul>
+								</li>
+								<li data-more="true">
+									<a href="">Обувь</a>
+									<ul class="col-1">
+										<li><a href="">Кеды</a></li>
+										<li><a href="">Кроссовки</a></li>
+										<li><a href="">Туфли</a></li>
+									</ul>
+								</li>
+								<li data-more="false"><a href="">Купальники</a></li>
+								<li data-more="false"><a href="">Сумочки</a></li>
+								<li data-more="false"><a href="">Украшения</a></li>
+							</ul>
+							<div class="actionBanner">
+								<img src="../images/content/navContent.png" alt="">
+							</div>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- endl topPanel -->
 	<div class="section cart">
 		<div class="container">
 			<div class="title">Корзина</div>
@@ -69,6 +284,7 @@
 						</div>
 					</div>
 					<div class="col size">
+						<div class="res">Размер</div>
 						<select name="" class="sizeSelect">
 							<option value="">L</option>
 							<option value="">XL</option>
@@ -77,6 +293,7 @@
 						</select>
 					</div>
 					<div class="col height">
+						<div class="res">Рост</div>
 						<select name="" class="sizeSelect">
 							<option value="">164 см</option>
 							<option value="">170 см</option>
@@ -85,6 +302,7 @@
 						</select>
 					</div>
 					<div class="col count">
+						<div class="res">Количество</div>
 						<div class="countField">
 							<div class="minus">
 								<img src="../images/icons/minus.png" alt="">
@@ -96,6 +314,7 @@
 						</div>
 					</div>
 					<div class="col price">
+						<div class="res">Цена</div>
 						<div class="breakPrice">3200 руб</div>
 						<div class="prcieNum">2700 руб</div>
 						<div class="dropPrice">Скидка по промокоду 30%</div>
@@ -124,6 +343,7 @@
 						</div>
 					</div>
 					<div class="col size">
+						<div class="res">Размер</div>
 						<select name="" class="sizeSelect">
 							<option value="">L</option>
 							<option value="">XL</option>
@@ -132,6 +352,7 @@
 						</select>
 					</div>
 					<div class="col height">
+						<div class="res">Рост</div>
 						<select name="" class="sizeSelect">
 							<option value="">164 см</option>
 							<option value="">170 см</option>
@@ -140,6 +361,7 @@
 						</select>
 					</div>
 					<div class="col count">
+						<div class="res">Количество</div>
 						<div class="countField">
 							<div class="minus">
 								<img src="../images/icons/minus.png" alt="">
@@ -151,6 +373,7 @@
 						</div>
 					</div>
 					<div class="col price">
+						<div class="res">Цена</div>
 						<div class="breakPrice">3200 руб</div>
 						<div class="prcieNum">2700 руб</div>
 						<div class="dropPrice">Скидка по промокоду 30%</div>
@@ -188,13 +411,13 @@
 	<!--  -->
 	<div class="section orderShower">
 		<div class="container">
-			<div class="orderShowerKey">
+			<div class="orderShowerKey animKey tabs" href="#formOrder">
 				Оформить заказ
 			</div>
 		</div>
 	</div>
 	<!--  -->
-	<div class="orderSector">
+	<div class="orderSector hidden" id="formOrder">
 		<div class="container">
 			<div class="form">
 				<div class="title">Оформление заказа</div>
@@ -313,99 +536,96 @@
 	<div class="section recomendation">
 		<div class="container">
 			<div class="title">также рекомендуем</div>
-			<div class="owl-carousel recomendation-slider">
-				<div class="card new">
-					<img src="../images/content/product1.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
+			<div class="obl-carousel" id="popularProducts-slider">
+				<div class="stage">
+				<div class="holste">
+					<div class="verticalWrap">
+							<div class="card new">
+								<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="dropPrice">-20%</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+							<img src="../images/content/product3.jpg" alt="">
+							<div class="infoProduct">
+								<div class="nameProduct">Жакет женский, 14775, серый</div>
+								<div class="price"></div>
+							</div>
+							<div class="addToCart">В КОРЗИНУ</div></div>
+						</div>
 					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product2.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
+								<div class="verticalWrap">
+							<div class="card new">
+								<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="dropPrice">-20%</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+								<img src="../images/content/product2.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Жакет женский, 14775, серый</div>
+									<div class="price"></div>
+								</div>
+								<div class="addToCart">В КОРЗИНУ</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="psevdoCart">
+							<img src="../images/content/product3.jpg" alt="">
+							<div class="infoProduct">
+								<div class="nameProduct">Жакет женский, 14775, серый</div>
+								<div class="price"></div>
+							</div>
+							<div class="addToCart">В КОРЗИНУ</div></div>
+						</div>
 					</div>
-					<div class="dropPrice">-20%</div>
-					<div class="addToCart">В КОРЗИНУ</div>
 				</div>
-				<div class="card">
-					<img src="../images/content/product3.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
-					</div>
-					<div class="dropPrice">-11%</div>
-					<div class="addToCart">В КОРЗИНУ</div>
 				</div>
-				<div class="card">
-					<img src="../images/content/product4.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product2.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product1.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product2.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product3.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product4.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
-				<div class="card">
-					<img src="../images/content/product1.jpg" alt="">
-					<div class="infoProduct">
-						<div class="nameProduct">Жакет женский, 14775, серый</div>
-						<div class="breakPrice">3200 руб</div>
-						<div class="price">2700 руб</div>
-					</div>
-					<div class="addToCart">В КОРЗИНУ</div>
-				</div>
+				<div class="owl-nav"><div class="owl-prev disabled"></div><div class="owl-next"></div></div>
 			</div>
 		</div>
 	</div>
@@ -478,5 +698,7 @@
 	<script src="../js/owl.carousel.min.js"></script>
 	<script src="../js/jquery.customSelect.min.js"></script>
 	<script src="../js/main.js"></script>
+	<script src="../js/obl.js"></script>
+	<script src="../js/nave.js"></script>
 </body>
 </html>

@@ -263,6 +263,7 @@
 		float: left
 		box-sizing: border-box
 		padding: 25px 30px 35px 25px
+		margin-bottom: 40px
 		.title
 			font-family: 'Source Sans Pro' , sans-serif
 			font-size: 30px
@@ -408,11 +409,20 @@
 		text-align: center
 		text-transform: uppercase
 		margin-bottom: 25px	
-	.owl-carousel
+	.obl-carousel
 		position: relative
+		width: 100%
+		.stage
+			overflow: hidden
+			width: 100%
+	.holste
+		width: 9999%
 	.card	
-		margin: 0 20px	
+		margin: 0 2.5vw
+		float: left
 		position: relative
+		width: 20vw
+		max-width: 215px
 		&.new:before
 			position: absolute
 			top: 0
@@ -440,7 +450,7 @@
 			width: 40px
 			padding: 4px 0
 			text-align: center
-			top: 120pxx
+			top: 10px
 		.infoProduct 
 			float: left
 			width: 120px
@@ -456,6 +466,7 @@
 				font-weight: 300
 		img
 			margin-bottom: 20px
+			width: 100%
 		.addToCart
 			color: #c3567e
 			font-size: 14px
@@ -494,9 +505,10 @@
 		width: 20px
 		background-repeat: no-repeat
 		background-size: container
+		cursor: pointer
 	.owl-prev
 		left: -20px
 		background-image: url('../images/icons/popularLeft.png')
 	.owl-next
-		right: -20px
+		right: -30px
 		background-image: url('../images/icons/popularRight.png')
