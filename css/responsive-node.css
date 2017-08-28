@@ -20,8 +20,11 @@
     right: -20px;
   }
   .popularProducts .card {
-    margin: 0 10px;
-    width: 23vw;
+    margin: 0 1.3vw;
+    width: 21vw;
+  }
+  .popularProducts .card img {
+    width: 100%;
   }
   .popularProducts .card .infoProduct .nameProduct {
     font-size: 14px;
@@ -32,9 +35,6 @@
   .popularProducts .card .addToCart {
     width: 100px;
     font-size: 14px;
-  }
-  .popularProducts .owl-nav {
-    display: none;
   }
 }
 

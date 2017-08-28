@@ -553,6 +553,14 @@
   text-align: left;
 }
 
+@media (min-width: 1143px) {
+  .recomendation .card {
+    margin: 0 20px !important;
+    width: 245px !important;
+    max-width: 245px !important;
+  }
+}
+
 .recomendation {
   margin-top: 30px;
   padding-bottom: 40px;

@@ -37,7 +37,7 @@
 				</div>
 				<div class="fieldGroup">
 					<label for="">Телефон</label>
-					<input type="text" class="phoneField inpt" placeholder="+7 (___) ___-__-__">
+					<input type="text" class="phoneField inpt" placeholder="+375 _________">
 				</div>
 				<div class="wrap">
 					<input type="submit" class="orderNow animKey" value="ЗАКАЗАТЬ ЗВОНОК">
@@ -138,7 +138,7 @@
 	</div>
 	<div class="section categoryNav">
 		<div class="container">
-			<div class="navbar" data-pon="hidden">
+			<div class="navbar" data-pon="visab">
 			<div class="wrap">
 				<div class="burger">
 					<span></span>
@@ -267,7 +267,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
-					<li data-status="hidden"><span>Новинки</span>
+					<li data-status="hidden"><span class="bgNone">Новинки</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -297,7 +297,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
-					<li data-status="hidden"><span>Акции</span>
+					<li data-status="hidden"><span class="bgNone">Акции</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -425,7 +425,7 @@
 					<div class="param">Штаны <a href="" class="rmParam"><img src="../images/icons/rmParamWhite.png" alt="del"></a></div>
 					<div class="dropAll">
 						<a href="" class="rmParamR"><img src="../images/icons/rmParamRed.png" alt="del"></a>
-						<span>Сбросить все</span>
+						<span class="punctir">Сбросить все</span>
 					</div>
 				</div>
 			</div>
@@ -688,6 +688,10 @@
 	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script src="../js/owl.carousel.min.js"></script>
 	<script src="../js/jquery.customSelect.min.js"></script>
+		<script src="../js/mask.js"></script>
+	<script>
+			 $(".phoneField").mask("+375 999999999");
+	</script>
 	<script src="../js/main.js"></script>
 	<script src="../js/obl.js"></script>
 	<script src="../js/nave.js"></script>

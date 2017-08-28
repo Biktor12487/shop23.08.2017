@@ -153,7 +153,7 @@
 				</div>
 				<div class="fieldGroup">
 					<label for="">Телефон</label>
-					<input type="text" class="phoneField inpt" placeholder="+7 (___) ___-__-__">
+					<input type="text" class="phoneField inpt" placeholder="+375 _________">
 				</div>
 				<div class="wrap">
 					<input type="submit" class="orderNow animKey" value="ЗАКАЗАТЬ ЗВОНОК">
@@ -202,7 +202,7 @@
 	</div>
 	<div class="section categoryNav">
 		<div class="container">
-			<div class="navbar" data-pon="hidden">
+			<div class="navbar" data-pon="visab	">
 				<div class="wrap">
 					<div class="burger">
 						<span></span>
@@ -331,7 +331,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
-					<li data-status="hidden"><span>Новинки</span>
+					<li data-status="hidden"><span class="bgNone">Новинки</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -361,7 +361,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
-					<li data-status="hidden"><span>Акции</span>
+					<li data-status="hidden"><span class="bgNone">Акции</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -834,28 +834,7 @@
 		        $s2input.val(value).trigger('input');
 		      }
 		    });
-		    jQuery(function($){
-			   $(".phoneField").mask("+7 (999) 999-99-99");
-			   });
-		   	var el = document.querySelectorAll('.countrySelect');
-		   	for (var i = el.length - 1; i >= 0; i--) {
-		   		el[i].onchange = function(){
-		   			if (this.value == 'ru') {
-		   				jQuery(function($){
-						   $(".phoneField").mask("+7 (999) 999-99-99");
-						   var place = '+7 (___) ___-__-__';
-						    $(".phoneField").attr('placeholder',place)
-						 });
-		   			}
-		   			else if( this.value == 'ua'){
-		   				jQuery(function($){
-						   $(".phoneField").mask("+380 (99) 999-99-99");
-						   var place = '+380 (___) ___-__-__';
-						   $(".phoneField").attr('placeholder',place)
-						 });
-		   			}
-		   		}
-		   	}
+		   $(".phoneField").mask("+375 999999999");
 	</script>
 	<script src="../js/main.js"></script>
 	<script src="../js/obl.js"></script>

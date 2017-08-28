@@ -10,11 +10,8 @@
     box-sizing: border-box;
     padding: 0 30px;
   }
-  .section {
-    overflow: hidden;
-  }
   .searchTop .searchField .textField {
-    width: 555px;
+    width: 525px;
   }
   .footer .sector2 {
     width: 24.6%;
@@ -91,9 +88,12 @@
   .footer .container > div a img {
     width: 100%;
   }
+  .categoryNav .actionBanner {
+    display: none;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 766px) {
   .topPanel .navbar {
     width: 100%;
     display: -webkit-box;

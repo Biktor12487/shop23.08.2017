@@ -192,9 +192,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-  text-decoration-style: dotted;
+  cursor: pointer;
   margin: 5px;
 }
 
@@ -346,16 +344,20 @@
   position: relative;
   margin-bottom: 30px;
   min-height: 425px;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 .content .card:nth-child(3n) {
   margin-right: 0;
 }
 
+.content .card:hover {
+  margin-top: -10px;
+}
+
 .content .card:hover .psevdoCard {
-  -webkit-transition-duration: .5s;
-  -o-transition-duration: .5s;
-  transition-duration: .5s;
   position: absolute;
   padding: 10px;
   width: 100%;
@@ -374,6 +376,7 @@
 
 .content .card:hover.new:before, .content .card:hover .dropPrice {
   z-index: 5;
+  top: 20px;
 }
 
 .content .card.new:before {

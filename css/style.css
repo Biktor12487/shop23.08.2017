@@ -228,6 +228,7 @@ body {
   position: absolute;
   top: 69px;
   width: 1140px;
+  max-width: 100%;
   background-color: #fff;
   z-index: 999;
   left: 0;
@@ -628,7 +629,7 @@ body {
   margin-bottom: 25px;
 }
 
-.orderWindow .contentWindowModal {
+.orderWindow .contentWindowModal, .sayWhreWill .contentWindowModal {
   width: 400px;
   background-color: #fff;
   padding: 40px 30px 20px 30px;
@@ -637,7 +638,7 @@ body {
   box-sizing: border-box;
 }
 
-.orderWindow .contentWindowModal .title {
+.orderWindow .contentWindowModal .title, .sayWhreWill .contentWindowModal .title {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 26px;
   font-weight: 400;
@@ -647,7 +648,7 @@ body {
   margin-bottom: 25px;
 }
 
-.orderWindow .contentWindowModal .fieldGroup {
+.orderWindow .contentWindowModal .fieldGroup, .sayWhreWill .contentWindowModal .fieldGroup {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -661,7 +662,7 @@ body {
   float: left;
 }
 
-.orderWindow .contentWindowModal .fieldGroup label {
+.orderWindow .contentWindowModal .fieldGroup label, .sayWhreWill .contentWindowModal .fieldGroup label {
   font-family: 'Roboto' , sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -680,7 +681,7 @@ body {
   align-items: center;
 }
 
-.orderWindow .contentWindowModal .fieldGroup .inpt {
+.orderWindow .contentWindowModal .fieldGroup .inpt, .sayWhreWill .contentWindowModal .fieldGroup .inpt {
   width: 255px;
   max-width: 65%;
   height: 40px;
@@ -690,7 +691,7 @@ body {
   padding: 5px;
 }
 
-.orderWindow .contentWindowModal .fieldGroup .customSelect {
+.orderWindow .contentWindowModal .fieldGroup .customSelect, .sayWhreWill .contentWindowModal .fieldGroup .customSelect {
   display: block;
   float: right;
   color: #999999;
@@ -712,23 +713,23 @@ body {
   max-width: 65%;
 }
 
-.orderWindow .contentWindowModal .fieldGroup select {
+.orderWindow .contentWindowModal .fieldGroup select, .sayWhreWill .contentWindowModal .fieldGroup select {
   right: 0;
   top: 0;
 }
 
-.orderWindow .contentWindowModal .fieldGroup .phoneField {
+.orderWindow .contentWindowModal .fieldGroup .phoneField, .sayWhreWill .contentWindowModal .fieldGroup .phoneField {
   font-family: 'Roboto' , sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #999999;
 }
 
-.orderWindow .contentWindowModal .wrap {
+.orderWindow .contentWindowModal .wrap, .sayWhreWill .contentWindowModal .wrap {
   text-align: center;
 }
 
-.orderWindow .contentWindowModal .orderNow {
+.orderWindow .contentWindowModal .orderNow, .sayWhreWill .contentWindowModal .orderNow {
   font-family: 'Roboto' ,sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -742,7 +743,7 @@ body {
   cursor: pointer;
 }
 
-.orderWindow .contentWindowModal .orderNow:hover {
+.orderWindow .contentWindowModal .orderNow:hover, .sayWhreWill .contentWindowModal .orderNow:hover {
   opacity: .9;
 }
 
@@ -1082,6 +1083,24 @@ body {
 
 .deleteProduct .contentWindowModal .wrap {
   margin-top: 60px;
+}
+
+.bgNone {
+  background-image: none !important;
+}
+
+.punctir {
+  position: relative;
+  text-decoration: none !important;
+}
+
+.punctir:after {
+  border: 1px dotted #b01b52;
+  width: 100%;
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,10 +7,19 @@
 			width: 14%
 			img
 				width: 100%
-				max-height: 200px
+				height: auto !important
+				max-height: auto !important
 	.popularProducts
 		.owl-nav
-			display: none
+			.owl-prev
+				left: -20px !important
+			.owl-next
+				right: -20px !important
+		.card
+			width: 21vw !important
+			margin: 0 1.45vw !important
+			img
+				width: 100%
 	.carousel , .owl-carousel
 		.owl-nav
 			width: 100vw
@@ -38,10 +47,13 @@
 				margin-left: 20px
 			.owl-next
 				margin-right: 20px
+	.categoryNav
+		.actionBanner
+			display: none
 @media (max-width:1023px)
 	.popularProducts
 		.card
-			width: 220px
+			width: 28.5vw !important
 			img
 				width: 100%
 		.owl-nav
@@ -56,13 +68,12 @@
 			justify-content: space-around
 		.card
 			width: 14%
-			img
-				width: 100%
-				max-height: 150px
 			span
 				text-align: center
 	.carousel 
 		height: 300px
+		.owl-nav
+			top: 35% !important
 		.owl-item
 			*
 				height: 300px !important
@@ -80,9 +91,6 @@
 			.card
 				width: 30.3%
 				margin: 10px 0
-				img
-					height: 185px
-					max-height: 185px
 	.carousel .owl-carousel .owl-dots
 		bottom: 10px
 	.popularProducts
@@ -95,7 +103,7 @@
 				width: 100vw
 				float: left
 			.card
-				margin: 20px auto
+				margin: 20px auto !important
 				float: none
 				clear: both
 				width: 225px
@@ -129,3 +137,8 @@
 				img
 					height: 185px
 					max-height: 185px
+.categoryCards 
+	.card
+		img
+			height: auto !important
+			max-height: auto !important

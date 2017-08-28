@@ -130,8 +130,7 @@
 			float: left
 			padding: 5px 5px 2px 10px
 			display: flex
-			text-decoration: underline
-			text-decoration-style: dotted
+			cursor: pointer
 			margin: 5px
 			.rmParamR
 				margin-right: 10px
@@ -235,11 +234,12 @@
 		position: relative
 		margin-bottom: 30px
 		min-height: 425px
+		transition-duration: .5s
 		&:nth-child(3n)
 			margin-right: 0
 		&:hover
+			margin-top: -10px
 			.psevdoCard
-				transition-duration: .5s
 				position: absolute
 				padding: 10px
 				width: 100%
@@ -253,6 +253,7 @@
 				display: block
 			&.new:before ,.dropPrice
 				z-index: 5
+				top: 20px
 		&.new:before
 			position: absolute
 			top: 0

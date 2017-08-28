@@ -4,9 +4,11 @@ function nave(){
         var navCategory = function(){
         var el = document.querySelectorAll('.categoryNav .navbar > ul > li');
       for (var i = el.length - 1; i >= 0; i--) {
-        el[i].setAttribute('data-height',absolutePx(getComputedStyle(el[i].querySelector('.navContent')).height));
-        el[i].setAttribute('data-status', 'hidden');
-        el[i].querySelector('.navContent').style.cssText = 'height: 0px';
+         if (!el[i].getAttribute('data-height')) {
+           el[i].setAttribute('data-height',absolutePx(getComputedStyle(el[i].querySelector('.navContent')).height));
+        }
+          el[i].setAttribute('data-status', 'hidden');
+          el[i].querySelector('.navContent').style.cssText = 'height: 0px';
       }
       var el = document.querySelectorAll('.navbar > ul > li');
       for (var i = el.length - 1; i >= 0; i--) {

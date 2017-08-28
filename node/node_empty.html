@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shop Pages</title>
+	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 	<!-- font-family: 'Roboto', sans-serif; -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
@@ -12,6 +13,8 @@
 	<link rel="stylesheet" href="../css/starrr.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/node.css">
+	<link rel="stylesheet" href="../css/responsive-style.css">
+	<link rel="stylesheet" href="../css/responsive-node.css">
 </head>
 <body>
 <!-- begin topPanel -->
@@ -130,6 +133,25 @@
 		</div>
 </div>
 <!--  -->
+<!-- ordeer with one click -->
+<div data-modal-window="sayWhreWill" class="modalWindow sayWhreWill">
+		<div class="contentWindowModal">
+			<div class="topPanelWindow">
+				<div class="close"></div>
+			</div>
+			<div class="bodyContentWindow">
+				<div class="title">Сообщить о появлении</div>
+				<div class="fieldGroup">
+					<label for="">E-mail</label>
+					<input type="email" class="inpt" placeholder="ivan@email.com">
+				</div>
+				<div class="wrap">
+					<input type="submit" class="orderNow animKey" value="Отправить">
+				</div>
+			</div>
+		</div>
+</div>
+<!--  -->
 <!-- call Back-->
 <div data-modal-window="callBack" class="modalWindow callBackWindow">
 		<div class="contentWindowModal">
@@ -199,8 +221,14 @@
 	</div>
 	<div class="section categoryNav">
 		<div class="container">
-			<div class="navbar">
-				<ul>
+			<div class="navbar" data-pon="visab	">
+				<div class="wrap">
+					<div class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>				<ul>
 					<li data-status="hidden"><span>Женщинам</span>
 						<div class="navContent">
 							<ul>
@@ -321,7 +349,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
-					<li data-status="hidden"><span>Новинки</span>
+					<li data-status="hidden"><span class="bgNone">Новинки</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -351,7 +379,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
-					<li data-status="hidden"><span>Акции</span>
+					<li data-status="hidden"><span class="bgNone">Акции</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -461,7 +489,7 @@
 				<!--  -->
 				<div class="orderKeys">
 					<div class="none">Нет в наличии</div>
-					<div class="keys  animKey orderOneClick">Сообщить о появлении</div>
+					<div class="keys  animKey orderOneClick btn modalKey" data-modal-id="sayWhreWill">Сообщить о появлении</div>
 					<div class="share  tabs" href="#shareIcons" >
 						<div class="shareList" id="shareIcons">
 							<div class="title">Поделиться</div>
@@ -792,6 +820,11 @@
 	<script src="../js/owl.carousel.min.js"></script>
 	<script src="../js/jquery.customSelect.min.js"></script>
 	<script src="../js/starrr.js"></script>
+		<script src="js/mask.js"></script>
+	<script>
+			 $(".phoneField").mask("+375 999999999");
+	</script>
+
 	<script>
 		 var $s2input = $('#star2_input');
 		    $('.starrr').starrr({
