@@ -213,6 +213,7 @@ body
 				font-weight: 700
 				color: #666666
 				margin-bottom: 3px
+				margin-top: 10px
 			a
 				text-decoration: none
 				font-family: 'Roboto' , sans-serif
@@ -419,6 +420,7 @@ body
 			display: flex
 			align-items: center
 			position: relative
+			width: 100%
 			float: left
 			label
 				font-family: 'Roboto' , sans-serif
@@ -438,6 +440,23 @@ body
 				border: 1px solid #e9e9e9
 				box-sizing: border-box
 				padding: 5px
+				float: right
+				display: block
+				position: absolute
+				right: 0
+				bottom: 0
+			span.customSelect
+				right: 0
+				position: absolute
+				bottom: 0
+				width: 255px
+				max-width: 65%
+			select.customSelect
+				z-index: 100
+				width: 255px !important
+				max-width: 65%
+				padding-top: 0
+				height: 40px !important
 			.customSelect
 				display: block
 				float: right
@@ -457,6 +476,7 @@ body
 				padding-top: 10px
 				border: 1px solid #e9e9e9
 				max-width: 65%
+				right: 0
 			select
 				right: 0
 				top: 0
