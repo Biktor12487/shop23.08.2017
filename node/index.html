@@ -123,10 +123,10 @@
 				</div>
 				<div class="fieldGroup">
 					<label for="">Телефон</label>
-					<input type="text" class="phoneField inpt" placeholder="+7 (___) ___-__-__">
+					<input type="text" class="phoneField inpt" placeholder="+375 _________">
 				</div>
 				<div class="wrap">
-					<input type="submit" class="orderNow animKey" value="ЗАКЗАТЬ">
+					<input type="submit" class="orderNow animKey" value="ЗАКАЗАТЬ">
 				</div>
 			</div>
 		</div>
@@ -398,27 +398,37 @@
 	<!--  -->
 	<div class="section content">
 		<div class="container">
-			<div class="sliderMint">
+			<div class="sliderMint zoomGallery" data-status="just">
 				<div class="holste">
-					<img src="../images/content/product1.jpg" alt="">
-					<div class="navMint"	>
-						<div class="arrow-prev"></div>
-						<div class="arrow-next"></div>
-					</div>
-				</div>
-				<div class="navMini">
-					<div class="wrap">
-						<div class="link" data-status="active">
-							<img src="../images/content/product1.jpg" alt="">
+						<img src="../images/content/product1.jpg" class="bigImg" alt="">
+						<div class="navMint"	>
+							<div class="arrow-prev"></div>
+							<div class="arrow-next"></div>
 						</div>
-						<div class="link">
-							<img src="../images/content/product2.jpg" alt="">
-						</div>
-						<div class="link">
-							<img src="../images/content/product3.jpg" alt="">
-						</div>
-						<div class="link">
-							<img src="../images/content/product4.jpg" alt="">
+					<div class="navMini">
+						<div class="wrap">
+							<div class="close"><img src="../images/icons/rmParamRed.png" alt=""></div>
+							<div class="anyHolste">
+							<div class="psevdoImg">
+								<img src="../images/content/product1.jpg" alt="">
+							</div>
+							<div class="link" data-status="active">
+								<img src="../images/content/product1.jpg" alt="">
+							</div>
+							<div class="link">
+								<img src="../images/content/product2.jpg" alt="">
+							</div>
+							<div class="link">
+								<img src="../images/content/product3.jpg" alt="">
+							</div>
+							<div class="link">
+								<img src="../images/content/product4.jpg" alt="">
+							</div>
+							</div>
+							<div class="navThe">
+								<div class="prev"><img src="../images/icons/popularLeft.png" alt=""></div>
+								<div class="next"><img src="../images/icons/popularRight.png" alt=""></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -470,7 +480,7 @@
 				<div class="orderKeys">
 					<div class="keys animKey addToCart">В КОРЗИНУ</div>
 					<div class="keys orderOneClick btn modalKey animKey" data-modal-id="orderNow" >Заказ в 1 клик</div>
-					<div class="share  tabs" href="#shareIcons" >
+					<div class="share  tabs" href="#shareIcons"  data-hidden="auto">
 						<div class="shareList" id="shareIcons">
 							<div class="title">Поделиться</div>
 							<a href="" class="shareLink"><img src="../images/icons/shareIcons.jpg" alt=""></a>
@@ -606,15 +616,13 @@
 				</div>
 				<div class="fieldGroup veryBigField">
 					<label for="">Текст отзыва</label>
-					<textarea name="" id="" >
-						
-					</textarea>
+					<textarea name="" id="" ></textarea>
 				</div>
 				<div class="row">
 					<div class="markGroup">
 						<div class="wrap">
 							<div class='starrr'></div>
-							<input type="hidden" name="rating" value="3" id="star2_input">
+							<input type="hidden" name="rating" value="5" id="star2_input">
 						</div>
 					</div>
 					<input type="submit" value="Отправить" class="sendKey">
@@ -630,90 +638,89 @@
 				<div class="stage">
 				<div class="holste">
 					<div class="verticalWrap">
-							<div class="card new">
-								<div class="psevdoCart">
-								<img src="../images/content/product2.jpg" alt="">
+						<div class="card new">
+							<div class="psevdoCard">
+								<img src="../images/content/product1.jpg" alt="">
 								<div class="infoProduct">
-									<div class="nameProduct">Жакет женский, 14775, серый</div>
-									<div class="price"></div>
+									<div class="nameProduct">Блуза женская, 14775, серый</div>
+									<div class="price">2700 ₽</div>
 								</div>
-								<div class="dropPrice">-20%</div>
-								<div class="animKey addToCart">В КОРЗИНУ</div>
+								<div class="animKey addToCart btn modalKey " data-modal-id="orderWindow">В КОРЗИНУ</div>
 							</div>
 						</div>
-						<div class="card">
-							<div class="psevdoCart">
-								<img src="../images/content/product2.jpg" alt="">
+						<div class="card new">
+							<div class="psevdoCard">
+								<img src="../images/content/product1.jpg" alt="">
 								<div class="infoProduct">
-									<div class="nameProduct">Жакет женский, 14775, серый</div>
-									<div class="price"></div>
+									<div class="nameProduct">Блуза женская, 14775, серый</div>
+									<div class="price">2700 ₽</div>
 								</div>
-								<div class="animKey addToCart">В КОРЗИНУ</div>
+								<div class="animKey addToCart btn modalKey " data-modal-id="orderWindow">В КОРЗИНУ</div>
 							</div>
 						</div>
-						<div class="card">
-							<div class="psevdoCart">
-								<img src="../images/content/product2.jpg" alt="">
+						<div class="card new">
+							<div class="psevdoCard">
+								<img src="../images/content/product1.jpg" alt="">
 								<div class="infoProduct">
-									<div class="nameProduct">Жакет женский, 14775, серый</div>
-									<div class="price"></div>
+									<div class="nameProduct">Блуза женская, 14775, серый</div>
+									<div class="price">2700 ₽</div>
 								</div>
-								<div class="animKey addToCart">В КОРЗИНУ</div>
+								<div class="animKey addToCart btn modalKey " data-modal-id="orderWindow">В КОРЗИНУ</div>
 							</div>
 						</div>
-						<div class="card">
-							<div class="psevdoCart">
-							<img src="../images/content/product3.jpg" alt="">
-							<div class="infoProduct">
-								<div class="nameProduct">Жакет женский, 14775, серый</div>
-								<div class="price"></div>
+						<div class="card new">
+							<div class="psevdoCard">
+								<img src="../images/content/product1.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Блуза женская, 14775, серый</div>
+									<div class="price">2700 ₽</div>
+								</div>
+								<div class="animKey addToCart btn modalKey " data-modal-id="orderWindow">В КОРЗИНУ</div>
 							</div>
-							<div class="animKey addToCart">В КОРЗИНУ</div></div>
 						</div>
 					</div>
 								<div class="verticalWrap">
-							<div class="card new">
-								<div class="psevdoCart">
-								<img src="../images/content/product2.jpg" alt="">
+						<div class="card new">
+							<div class="psevdoCard">
+								<img src="../images/content/product1.jpg" alt="">
 								<div class="infoProduct">
-									<div class="nameProduct">Жакет женский, 14775, серый</div>
-									<div class="price"></div>
+									<div class="nameProduct">Блуза женская, 14775, серый</div>
+									<div class="price">2700 ₽</div>
 								</div>
-								<div class="dropPrice">-20%</div>
-								<div class="animKey addToCart">В КОРЗИНУ</div>
+								<div class="animKey addToCart btn modalKey " data-modal-id="orderWindow">В КОРЗИНУ</div>
 							</div>
 						</div>
-						<div class="card">
-							<div class="psevdoCart">
-								<img src="../images/content/product2.jpg" alt="">
+						<div class="card new">
+							<div class="psevdoCard">
+								<img src="../images/content/product1.jpg" alt="">
 								<div class="infoProduct">
-									<div class="nameProduct">Жакет женский, 14775, серый</div>
-									<div class="price"></div>
+									<div class="nameProduct">Блуза женская, 14775, серый</div>
+									<div class="price">2700 ₽</div>
 								</div>
-								<div class="animKey addToCart">В КОРЗИНУ</div>
+								<div class="animKey addToCart btn modalKey " data-modal-id="orderWindow">В КОРЗИНУ</div>
 							</div>
 						</div>
-						<div class="card">
-							<div class="psevdoCart">
-								<img src="../images/content/product2.jpg" alt="">
+						<div class="card new">
+							<div class="psevdoCard">
+								<img src="../images/content/product1.jpg" alt="">
 								<div class="infoProduct">
-									<div class="nameProduct">Жакет женский, 14775, серый</div>
-									<div class="price"></div>
+									<div class="nameProduct">Блуза женская, 14775, серый</div>
+									<div class="price">2700 ₽</div>
 								</div>
-								<div class="animKey addToCart">В КОРЗИНУ</div>
+								<div class="animKey addToCart btn modalKey " data-modal-id="orderWindow">В КОРЗИНУ</div>
 							</div>
 						</div>
-						<div class="card">
-							<div class="psevdoCart">
-							<img src="../images/content/product3.jpg" alt="">
-							<div class="infoProduct">
-								<div class="nameProduct">Жакет женский, 14775, серый</div>
-								<div class="price"></div>
+						<div class="card new">
+							<div class="psevdoCard">
+								<img src="../images/content/product1.jpg" alt="">
+								<div class="infoProduct">
+									<div class="nameProduct">Блуза женская, 14775, серый</div>
+									<div class="price">2700 ₽</div>
+								</div>
+								<div class="animKey addToCart btn modalKey " data-modal-id="orderWindow">В КОРЗИНУ</div>
 							</div>
-							<div class="animKey addToCart">В КОРЗИНУ</div></div>
 						</div>
 					</div>
-				</div>
 				</div>
 				<div class="owl-nav"><div class="owl-prev disabled"></div><div class="owl-next"></div></div>
 			</div>
@@ -818,6 +825,7 @@
  			Проверить регистрацию в Торговом реестре. Книга замечаний и предложений находится по адресу: Минская обл., Смолевичский р-н, г. Смолевичи, ул. Советская, д.44.</span>
 		</div>	
 	</div>
+	<div id="scroller" class="b-top" style="display: none;"><img src="../images/icons/upKey.png" alt="UP"></div>
 	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script src="../js/owl.carousel.min.js"></script>
 	<script src="../js/owl.carousel.min.js"></script>
@@ -825,6 +833,7 @@
 	<script src="../js/modal.js"></script>
 	<script src="../js/starrr.js"></script>
 	<script src="../js/mask.js"></script>
+	<script src="../js/zoom.galery.js"></script>
 	<script>
 		 var $s2input = $('#star2_input');
 		    $('.starrr').starrr({

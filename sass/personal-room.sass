@@ -30,6 +30,7 @@
 			&.ui-state-active
 				a
 					color: #000 !important
+					font-weight: 700
 			&
 				outline: 0 !important
 				border: 0 !important
@@ -39,6 +40,12 @@
 	.sector2
 		.title
 			float: left
+		.fieldGroup
+			position: relative
+			z-index: 1
+			select
+				cursor: pointer
+				bottom: 0
 		.cehcPoint
 			float: right
 			span
@@ -260,6 +267,8 @@
 			b
 				font-weight: 700
 	.sector5
+		.res
+			display: none
 		background-color: transparent
 		.row.firstRow
 			background-color: #f8f8f8
@@ -459,6 +468,8 @@
 		background-color: transparent
 		padding-left: 0
 		padding-right: 0
+		.res
+			display: none
 		.productHistory
 			.row
 				width: 100%

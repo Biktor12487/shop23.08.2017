@@ -30,13 +30,13 @@
   color: #34476b;
   font-weight: 300;
   text-decoration: none;
-  padding: 0 18px;
+  margin: 0 18px;
+  position: relative;
+  display: block;
 }
 
 .headerProducts .navProducts a:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-  text-decoration-style: dotted;
+  color: #b01b52;
 }
 
 .sort {
@@ -59,6 +59,11 @@
   border-left: 1px solid #e9e9e9;
   margin-left: -2px;
   padding-left: 1px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
 }
 
 .sort .first > li:hover > span {
@@ -68,6 +73,10 @@
 
 .sort .first > li:hover > .sortList {
   display: block;
+  min-width: 100%;
+  border-bottom: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
 }
 
 .sort .first > li > span {
@@ -106,14 +115,13 @@
   background-color: #fff;
   position: absolute;
   z-index: 9;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-left: 10px;
   overflow: hidden;
-  min-width: 100%;
+  min-width: 88% !important;
   display: none;
   left: 0;
-  top: 48.5px;
+  top: 45.5px;
+  padding-left: 12%;
+  margin-left: -1px;
 }
 
 .sort .sortList li {
@@ -542,6 +550,10 @@
 .content .pagination .wrap a.active {
   background-color: transparent;
   color: #666666;
+}
+
+.orderWindow .paramProduct .orderSelect {
+  float: none;
 }
 
 /*# sourceMappingURL=products.css.map */

@@ -1,3 +1,5 @@
+$(window).scroll(function () {if ($(this).scrollTop() > 0) {$('#scroller').fadeIn();} else {$('#scroller').fadeOut();}});
+$('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 400); return false;});
 $(document).ready(function(){
   $("#header-slider").owlCarousel({
   	items: 1,
@@ -100,12 +102,13 @@ $(document).ready(function(){
 var countField = function(){
   var el = document.querySelectorAll('.countField');
   for (var i = el.length - 1; i >= 0; i--) {
+    el[i].querySelector('input').value = 1;
      el[i].querySelector('.minus').onclick = function() {
-        if ( Number( this.parentNode.querySelector('input').value) > 0) {
+        if ( Number( this.parentNode.querySelector('input').value) > 1) {
           this.parentNode.querySelector('input').value = Number( this.parentNode.querySelector('input').value) -1;
         }
         else{
-          this.parentNode.querySelector('input').value = 0;
+          this.parentNode.querySelector('input').value = 1;
         }
       }
      el[i].querySelector('.plus').onclick = function() {
@@ -117,8 +120,8 @@ var countField = function(){
         }
       }
      el[i].querySelector('input').onchange = function(){
-        if (Number(this.value) < 0) {
-          this.value = 0;
+        if (Number(this.value) < 1) {
+          this.value = 1;
         }
         else if (Number(this.value) > 999) {
           this.value = 999;
@@ -195,9 +198,16 @@ var tabsJust = function(){
         document.querySelector(id).style.display = "block";
       }
       else{
-        document.querySelector(id).style.display = "none";
       }
     }
+      $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".shareList"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+          div.css('display','none')
+        }
+  });
+
   }
 }();
 

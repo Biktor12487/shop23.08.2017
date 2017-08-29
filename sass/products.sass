@@ -20,10 +20,11 @@
 			color: #34476b
 			font-weight: 300
 			text-decoration: none
-			padding: 0 18px
+			margin: 0 18px
+			position: relative
+			display: block
 			&:hover
-				text-decoration: underline
-				text-decoration-style: dotted
+				color: #b01b52
 .sort
 	background-color: #fafafa
 	.first>li
@@ -39,11 +40,19 @@
 			border-left: 1px solid #e9e9e9
 			margin-left: -2px
 			padding-left: 1px
+			box-sizing: border-box
+			border-top: 1px solid #e9e9e9
+			border-left: 1px solid #e9e9e9
+			border-right: 1px solid #e9e9e9
 			&>span
 				border: 0
 				color: #b01b52
 			&>.sortList
 				display: block
+				min-width: 100%
+				border-bottom: 1px solid #e9e9e9
+				border-left: 1px solid #e9e9e9
+				border-right: 1px solid #e9e9e9
 		&>span
 			font-family: 'Roboto' , sans-serif
 			font-size: 14px
@@ -72,13 +81,13 @@
 		background-color: #fff
 		position: absolute
 		z-index: 9
-		box-sizing: border-box
-		padding-left: 10px
 		overflow: hidden
-		min-width: 100%
+		min-width: 88% !important
 		display: none
 		left: 0
-		top: 48.5px
+		top: 45.5px
+		padding-left: 12%
+		margin-left: -1px
 		li
 			list-style: none
 			width: 105px
@@ -369,3 +378,5 @@
 				&.active
 					background-color: transparent
 					color: #666666
+.orderWindow .paramProduct .orderSelect
+	float: none

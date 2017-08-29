@@ -46,6 +46,7 @@
 
 .content .navbar li.ui-state-active a {
   color: #000 !important;
+  font-weight: 700;
 }
 
 .content .navbar li {
@@ -60,6 +61,16 @@
 
 .content .sector2 .title {
   float: left;
+}
+
+.content .sector2 .fieldGroup {
+  position: relative;
+  z-index: 1;
+}
+
+.content .sector2 .fieldGroup select {
+  cursor: pointer;
+  bottom: 0;
 }
 
 .content .sector2 .cehcPoint {
@@ -369,6 +380,10 @@
   background-color: transparent;
 }
 
+.content .sector5 .res {
+  display: none;
+}
+
 .content .sector5 .row.firstRow {
   background-color: #f8f8f8;
   width: 100%;
@@ -650,6 +665,10 @@
   background-color: transparent;
   padding-left: 0;
   padding-right: 0;
+}
+
+.content .sector4 .res {
+  display: none;
 }
 
 .content .sector4 .productHistory .row {
