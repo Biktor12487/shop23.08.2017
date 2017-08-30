@@ -10,6 +10,9 @@ var showerModalWindow = function(){
 				if (event.target.className === 'close') {
 					getWindow.setAttribute("data-modal-status",'hidden');
 				}
+				if (event.target.getAttribute('data-modal-status') == 'visab') {
+					getWindow.setAttribute("data-modal-status",'hidden');
+				}
 			}
 		}
 	}

@@ -40,6 +40,17 @@ $(document).ready(function(){
   	margin: 0,
   });
 });
+var scrollerTop = function(){
+  window.onscroll = function(){
+    var topPos = window.pageYOffset;
+    if (topPos > 300) {
+      document.querySelector('.fixedTopPanel').setAttribute('data-status','visible')
+    }
+    else if (topPos <= 300) {
+      document.querySelector('.fixedTopPanel').setAttribute('data-status','hidden')
+    }
+  }
+}();
 $(document).ready(function(){
   $("#youWasSee-slider").owlCarousel({
   	items: 10,
@@ -190,15 +201,22 @@ var sliderMint = function(){
 }();
 var tabsJust = function(){
   var el = document.querySelectorAll('.tabs');
+  var event1 = new  Event('hook_on');
+  var event2 = new Event('hook_off');
   for (var i = el.length - 1; i >= 0; i--) {
     el[i].onclick = function(){
       var id = this.getAttribute('href');
         console.log(id)
-      if ( getComputedStyle(document.querySelector(id)).display == 'none') {
-        document.querySelector(id).style.display = "block";
-      }
-      else{
-      }
+        if (id) {
+                if ( getComputedStyle(document.querySelector(id)).display == 'none') {
+                  $(id).css('display','block')
+                  this.dispatchEvent(event1)
+                }
+                else{
+                   $(id).css('display','none')
+                   this.dispatchEvent(event2)
+                }
+        }
     }
       $(document).mouseup(function (e){ // событие клика по веб-документу
         var div = $(".shareList"); // тут указываем ID элемента
@@ -238,4 +256,13 @@ var tabses = function(){
       }
      }
   }       
+}();
+
+var showerNavProductsChangeName = function(){
+  document.querySelector('.navProducts .tabs').addEventListener('hook_on',function(){
+    this.innerHTML = 'Свернуть';
+  })
+  document.querySelector('.navProducts .tabs').addEventListener('hook_off',function(){
+    this.innerHTML = 'Показать все';
+  })
 }();

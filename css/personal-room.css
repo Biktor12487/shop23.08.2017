@@ -111,6 +111,17 @@
   clear: both;
 }
 
+.content .sector2 select.selectField {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.content .sector2 .selectField {
+  cursor: pointer;
+}
+
 .content .sectors {
   width: 100%;
   background-color: #f8f8f8;
@@ -133,6 +144,7 @@
   width: 340px;
   float: left;
   margin-right: 30px;
+  position: relative;
   margin-bottom: 20px;
 }
 

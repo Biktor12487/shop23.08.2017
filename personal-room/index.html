@@ -47,6 +47,24 @@
 </div>
 <!--  -->
 <!-- begin topPanel -->
+	<div class="section fixedTopPanel" data-status="hidden">
+		<div class="container">
+			<div class="logo"><a href=""><img src="../images/icons/logo.png" alt=""></a></div>
+			<div class="social">
+				<a href=""><img src="../images/icons/fb.png" alt=""></a>
+				<a href=""><img src="../images/icons/vk.png" alt=""></a>
+				<a href=""><img src="../images/icons/ok.png" alt=""></a>
+				<a href=""><img src="../images/icons/in.png" alt=""></a>
+			</div>	
+			<div class="callBack"><a href="tel:+74957739180"> +7 (495) 773-91-80</a><div class="keyCallBack"><span data-modal-id="callBack" class="	btn modalKey">Заказать звонок</span></div>
+			<div class="box">
+					<!-- empty -->
+					<div class="empty">В корзине нет товаров</div>
+					<!-- isset -->
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="section topPanel">
 		<div class="container">
 			<div class="navbar">
@@ -83,18 +101,18 @@
 			</div>
 		</div>
 	</div>
-	<div class="section categoryNav">
+		<div class="section categoryNav">
 		<div class="container">
 			<div class="navbar" data-pon="visab">
-			<div class="wrap">
-				<div class="burger">
-					<span></span>
-					<span></span>
-					<span></span>
+				<div class="wrap">
+					<div class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</div>
-			</div>
 				<ul>
-					<li data-status="hidden"><span>Женщинам</span>
+					<li class="droper" data-status="hidden"><span>Женщинам</span>
 						<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -124,7 +142,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
-					<li data-status="hidden"><span>Детям</span>
+					<li class="droper" data-status="hidden"><span>Детям</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -154,7 +172,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div</li>
-					<li data-status="hidden"><span>Для офиса</span>
+					<li class="droper" data-status="hidden"><span>Для офиса</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -184,7 +202,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
-					<li data-status="hidden"><span>Большие размеры</span>
+					<li class="droper" data-status="hidden"><span>Большие размеры</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -241,7 +259,7 @@
 								<li data-more="false"><a href="">Украшения</a></li>
 							</ul>
 							<div class="actionBanner">
-								<img src="../	images/content/navContent.png" alt="">
+								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
 					<li data-status="hidden"><span class="bgNone">Акции</span>
@@ -312,10 +330,15 @@
 								<div class="psevodCheckBox" data-status="on">
 										<input type="checkbox">
 								</div>
-								<span>Получать рекламные письма</span>
+								<span>Основной адрес доставки</span>
 						</div>
 					</div>
-					<div class="longField"><label for="">Страна </label><input type="text" class="textField"></div>
+					<div class="longField"><label for="">Страна </label>
+					<select name="" id="" class="selectField orderSelect">
+								<option value="">Украина</option>
+								<option value="">Китай</option>
+								<option value="">Почтой</option>
+							</select></div>
 						<div class="longField"><label for="">Регион </label><input type="text" class="textField"></div>
 						<div class="longField"><label for="">Населенный пункт</label><input type="text"></div>
 						<div class="longField"><label for="">Улица</label><input type="text class="textField""></div>	

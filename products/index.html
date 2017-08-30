@@ -100,6 +100,24 @@
 </div>
 <!--  -->
 <!-- begin topPanel -->
+	<div class="section fixedTopPanel" data-status="hidden">
+		<div class="container">
+			<div class="logo"><a href=""><img src="../images/icons/logo.png" alt=""></a></div>
+			<div class="social">
+				<a href=""><img src="../images/icons/fb.png" alt=""></a>
+				<a href=""><img src="../images/icons/vk.png" alt=""></a>
+				<a href=""><img src="../images/icons/ok.png" alt=""></a>
+				<a href=""><img src="../images/icons/in.png" alt=""></a>
+			</div>	
+			<div class="callBack"><a href="tel:+74957739180"> +7 (495) 773-91-80</a><div class="keyCallBack"><span data-modal-id="callBack" class="	btn modalKey">Заказать звонок</span></div>
+			<div class="box">
+					<!-- empty -->
+					<div class="empty">В корзине нет товаров</div>
+					<!-- isset -->
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="section topPanel">
 		<div class="container">
 			<div class="navbar">
@@ -136,18 +154,18 @@
 			</div>
 		</div>
 	</div>
-	<div class="section categoryNav">
+		<div class="section categoryNav">
 		<div class="container">
 			<div class="navbar" data-pon="visab">
-			<div class="wrap">
-				<div class="burger">
-					<span></span>
-					<span></span>
-					<span></span>
+				<div class="wrap">
+					<div class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</div>
-			</div>
 				<ul>
-					<li data-status="hidden"><span>Женщинам</span>
+					<li class="droper" data-status="hidden"><span>Женщинам</span>
 						<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -177,7 +195,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
-					<li data-status="hidden"><span>Детям</span>
+					<li class="droper" data-status="hidden"><span>Детям</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -207,7 +225,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div</li>
-					<li data-status="hidden"><span>Для офиса</span>
+					<li class="droper" data-status="hidden"><span>Для офиса</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -237,7 +255,7 @@
 								<img src="../images/content/navContent.png" alt="">
 							</div>
 						</div></li>
-					<li data-status="hidden"><span>Большие размеры</span>
+					<li class="droper" data-status="hidden"><span>Большие размеры</span>
 					<div class="navContent">
 							<ul>
 								<li data-more="true">
@@ -332,11 +350,17 @@
 		</div>
 	</div>
 	<!-- endl topPanel -->
+	<div class="section sortPage">
+		<div class="container">
+			<div class="home"><a href="">Главная </a>/ <span>Женщинам</span></div>
+		</div>
+	</div>
+	<!--  -->
 	<div class="section headerProducts">
 		<div class="container">
-			<div class="title">
+			<h1 class="title">
 				Женщинам
-			</div>
+			</h1>
 			<div class="wrap">
 				<div class="navProducts">
 					<ul>
@@ -346,7 +370,19 @@
 						<li><a href="">Колготы</a></li>
 						<li><a href="">Пиджаки</a></li>
 						<li><a href="">Сумки</a></li>
-						<li><a href="">Показать все</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Блузы</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Штаны</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Рубашки</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Сумки</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Блузы</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Штаны</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Рубашки</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Сумки</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Блузы</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Штаны</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Рубашки</a></li>
+						<li style="display: none" class="hiddenLink"><a href="">Сумки</a></li>
+						<li><span class="tabs" href=".hiddenLink">Показать все</span></li>
 					</ul>
 				</div>
 			</div>
@@ -397,7 +433,23 @@
 					<li><span> Рост</span></li>
 					<li><span> Состав </span></li>
 					<li><span>Тип</span></li>
-					<li class="countProduct"><b>Товаров</b> <span>15</span></li>
+					<li  class="countProduct"><b>Товаров</b> <span>15</span>
+						<div class="sortList">
+							<ul>
+								<li><div class="psevodCheckBox" data-status="on">
+									<input type="checkbox">
+								</div><span>Лето</span></li>
+								<li><div class="psevodCheckBox">
+									<input type="checkbox">
+								</div><span>Осень</span></li>
+								<li><div class="psevodCheckBox">
+									<input type="checkbox">
+								</div><span>Весна</span></li>
+								<li><div class="psevodCheckBox">
+									<input type="checkbox">
+								</div><span>Зима</span></li>
+							</ul>
+						</div></li>
 				</ul>
 			</div>
 		</div>
@@ -440,7 +492,7 @@
 				</div>
 				<div class="emailShare">
 					<div class="percentIcon"><img src="../images/icons/footerPercent.png" alt=""></div>
-					<div class="title">Хотите товары со скикой?</div>
+					<div class="title">Хотите товары со скидкой?</div>
 					<div class="beforeTitle">Подпишитесь на рассылку</div>
 					<div class="fieldGroup">
 						<form action="">
@@ -460,6 +512,7 @@
 						<img src="../images/content/product1.jpg" alt="">
 						<div class="infoProduct">
 							<div class="nameProduct">Блуза женская, 14775, серый</div>
+							<div class="breakPrice">2700 руб</div>
 							<div class="price">2700 ₽</div>
 						</div>
 						<div class="animKey addToCart btn modalKey " data-modal-id="orderWindow" >В КОРЗИНУ</div>
@@ -583,6 +636,14 @@
 						<a href="" class="nav-next"><img src="../images/icons/pag-next.png" alt=""></a>
 					</div>
 				</div>
+					<div class="aboutProducts ">
+							<div class="textProduct">
+									<span class="text">
+										Модные женские блузки – это отличный вариант не только для повседневного лука, но и для образа на выход или вечеринки. Современные блузки – это не те строгие рубашки, которые раньше носили с деловым костюмом, теперь разнообразие фасонов и расцветок просто поражает: не знаете, что надеть вместе с любимыми джинсами на дискотеку.
+									</span>
+									<div class="readMore">Подробнее</div>
+							</div>
+					</div>
 			</div>
 		</div>
 	</div>

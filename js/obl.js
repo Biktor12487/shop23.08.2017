@@ -2,11 +2,11 @@ var carouselMe = function(){
   var Index = 0;
   var count = 4;
    var widDisp = document.documentElement.clientWidth;
-   if (widDisp < 1024 && widDisp > 768) {
+   if (widDisp < 1024 && widDisp > 766) {
     count = 3;
       var num = document.querySelectorAll('.obl-carousel .card').length -count;
    }
-  else if (widDisp < 767){
+  else if (widDisp < 766){
     count = 1;
       var num = document.querySelectorAll('.obl-carousel .card').length/4 -1;
    }

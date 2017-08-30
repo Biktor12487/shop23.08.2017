@@ -101,6 +101,9 @@
   .carousel {
     height: 300px;
   }
+  .carousel .owl-carousel {
+    height: 300px;
+  }
   .carousel .owl-nav {
     top: 35% !important;
   }
@@ -109,12 +112,12 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 766px) {
   .carousel {
     height: 200px;
   }
   .carousel .owl-carousel {
-    height: 200px;
+    height: 200px !important;
   }
   .carousel .owl-carousel .owl-item * {
     height: 200px !important;
@@ -169,6 +172,15 @@
   }
   .popularProducts .owl-nav .owl-next {
     margin-right: 50px;
+  }
+  .obl-carousel .card {
+    width: 70vw !important;
+  }
+  .obl-carousel .card .infoProduct .nameProduct {
+    font-size: 16px;
+  }
+  .obl-carousel .card .infoProduct .price {
+    font-size: 18px;
   }
 }
 
